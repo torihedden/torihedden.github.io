@@ -1,0 +1,247 @@
+@media (min-width: 841px) {
+  body {
+    font-size: 1em;
+    line-height: 1.2; }
+
+  #name-wrap {
+    display: inline-block; }
+
+  #my-name {
+    text-transform: uppercase;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 3em;
+    display: block; }
+
+  #name-subtitle {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 1.5em;
+    text-align: right;
+    display: inline-block;
+    margin-left: 8px; }
+
+  #header {
+    color: white;
+    background-color: #063141;
+    padding: 20px; }
+    #header #contact-section {
+      display: inline-block; }
+      #header #contact-section a {
+        color: white;
+        margin: 0 10px; }
+      #header #contact-section i:hover {
+        color: #4099FF; }
+
+  #left-bar {
+    position: absolute;
+    top: 100;
+    left: 40;
+    font-family: "Open Sans", "Arial", sans-serif;
+    line-height: 2;
+    font-size: 3em;
+    margin-left: 10px;
+    margin-top: 45px; }
+    #left-bar div:hover {
+      text-decoration: underline; }
+    #left-bar a {
+      color: black;
+      text-decoration: none; }
+
+  #projects {
+    height: 100%; }
+    #projects #project-wrap {
+      width: 50%;
+      margin-left: 30%;
+      margin-top: 2%;
+      display: inline-block; }
+      #projects #project-wrap .project-square {
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        margin-right: 15px;
+        margin-bottom: 15px; }
+      #projects #project-wrap .project-rect {
+        width: 400px;
+        height: 200px;
+        display: inline-block;
+        margin-right: 15px;
+        margin-bottom: 15px; }
+
+  #about {
+    margin: 0 0 5% 0;
+    border: solid 2px red; }
+
+  #contact {
+    height: 300px;
+    background-color: #063141;
+    font-family: "Open Sans", "Arial", sans-serif; }
+    #contact #contact-wrap {
+      vertical-align: middle; }
+      #contact #contact-wrap div {
+        padding: 2%;
+        text-align: center;
+        font-size: 1em;
+        color: white; }
+        #contact #contact-wrap div a {
+          text-decoration: none;
+          color: white; }
+        #contact #contact-wrap div a:hover {
+          text-decoration: underline; }
+      #contact #contact-wrap #copyright {
+        margin-top: 2%;
+        font-size: 0.8em; }
+
+  #about-me {
+    margin-top: 3%; }
+
+  #bio {
+    display: inline-block;
+    font-family: "Open Sans", "Arial", sans-serif;
+    line-height: 1.5;
+    font-size: 1.5em;
+    width: 35%;
+    margin-left: 2%;
+    margin-right: 5%;
+    border: solid 2px blue;
+    text-align: left;
+    vertical-align: middle; }
+
+  #large-portrait {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2% 0 0 15%;
+    border: solid 2px green; }
+
+  .back-to-top {
+    display: block;
+    font-family: "Open Sans", "Arial", sans-serif;
+    text-decoration: none;
+    color: black;
+    text-align: center; } }
+@media (min-width: 600px) and (max-width: 840px) {
+  body {
+    background-color: blue; } }
+@media (max-width: 599px) {
+  body {
+    font-size: 1em;
+    line-height: 1.2; }
+
+  #name-wrap {
+    display: inline-block; }
+
+  #my-name {
+    text-transform: uppercase;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 3em;
+    display: block; }
+
+  #name-subtitle {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 1.5em;
+    text-align: right;
+    display: inline-block;
+    margin-left: 8px; }
+
+  #header {
+    color: white;
+    background-color: #063141;
+    padding: 20px; }
+    #header #contact-section {
+      display: none; }
+      #header #contact-section a {
+        color: white;
+        margin: 0 10px; }
+      #header #contact-section i:hover {
+        color: #4099FF; }
+
+  #left-bar {
+    position: absolute;
+    top: 100;
+    left: 40;
+    font-family: "Open Sans", "Arial", sans-serif;
+    line-height: 2;
+    font-size: 3em;
+    margin-left: 10px;
+    margin-top: 45px; }
+    #left-bar div:hover {
+      text-decoration: underline; }
+    #left-bar a {
+      color: black;
+      text-decoration: none; }
+
+  #projects {
+    height: 100%; }
+    #projects #project-wrap {
+      width: 50%;
+      margin-left: 30%;
+      margin-top: 2%;
+      display: inline-block; }
+      #projects #project-wrap .project-square {
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        margin-right: 15px;
+        margin-bottom: 15px; }
+      #projects #project-wrap .project-rect {
+        width: 400px;
+        height: 200px;
+        display: inline-block;
+        margin-right: 15px;
+        margin-bottom: 15px; }
+
+  #about {
+    margin: 0 0 5% 0;
+    border: solid 2px red; }
+
+  #contact {
+    height: 200px;
+    background-color: #063141;
+    font-family: "Open Sans", "Arial", sans-serif; }
+    #contact #contact-wrap {
+      vertical-align: middle; }
+      #contact #contact-wrap div {
+        padding: 2%;
+        text-align: center;
+        font-size: 1em;
+        color: white; }
+        #contact #contact-wrap div a {
+          text-decoration: none;
+          color: white; }
+        #contact #contact-wrap div a:hover {
+          text-decoration: underline; }
+      #contact #contact-wrap #copyright {
+        margin-top: 2%;
+        font-size: 0.8em; }
+
+  #about-me {
+    margin-top: 3%; }
+
+  #bio {
+    display: inline-block;
+    font-family: "Open Sans", "Arial", sans-serif;
+    line-height: 1.5;
+    font-size: 1.3em;
+    width: 80%;
+    margin: 2% 10%;
+    border: solid 2px blue;
+    text-align: center;
+    vertical-align: middle; }
+
+  #large-portrait {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2% 0 0 25%;
+    border: solid 2px green;
+    width: 50%; }
+    #large-portrait img {
+      width: 100%; }
+
+  .back-to-top {
+    display: block;
+    font-family: "Open Sans", "Arial", sans-serif;
+    text-decoration: none;
+    color: black;
+    text-align: center; } }
+
+/*# sourceMappingURL=styles.css.map */

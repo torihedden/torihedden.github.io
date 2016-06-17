@@ -1,0 +1,13 @@
+$background-gray: #E8E9EB;
+$navy: #0f183e;
+$navy2: #063141;
+$purple: #582c83;
+$sea-foam-green: #9eb7b9;
+$warm-gray: #484848;
+$font: "Open Sans", "Arial", sans-serif;
+
+
+//media queries
+@import "desktopView";
+@import "tabletView";
+@import "phoneView";
