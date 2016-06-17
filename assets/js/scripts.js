@@ -1,10 +1,12 @@
 
 $(document).ready(function(){
 
-  $($(".fa-times")[0]).hide();
+  $(".fa-times").hide();
 
   $(".float-icon").click(function(){
     $(".fa-comment-o").toggle();
     $(".fa-times").toggle();
+
+    $(".menu-wrap").toggle();
   });
 });
