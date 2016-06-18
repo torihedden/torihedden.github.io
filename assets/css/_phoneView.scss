@@ -4,6 +4,7 @@
   body {
     font-size: 1em;
     line-height: 1.2;
+    font-family: $font;
     #content-wrapper {
     }
   }
@@ -67,15 +68,27 @@
   }
 
   #projects {
-    border: solid 1px red;
-    margin: 10% 5% 20% 5%;
+    margin: 10% 15% 20% 15%;
     box-sizing: border-box;
-    width: 90%;
+    width: 70%;
     .project-card {
-      border: solid 1px black;
+      // border: solid 1px gray;
+      background-color: #ececec;
       width: (100% / 1);
       box-sizing: border-box;
       display: inline-block;
+      margin: 5% 0;
+      color: black;
+      text-align: center;
+      font-size: 1.5em;
+      padding: 2% 0;
+      .project-desc {
+        font-size: 0.8em;
+      }
+      img {
+        width: 50%;
+        margin: 5% 25%;
+      }
     }
   }
 

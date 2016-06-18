@@ -255,7 +255,8 @@
 @media (max-width: 599px) {
   body {
     font-size: 1em;
-    line-height: 1.2; }
+    line-height: 1.2;
+    font-family: "Open Sans", "Arial", sans-serif; }
 
   #name-wrap {
     display: inline-block; }
@@ -302,15 +303,24 @@
       text-decoration: none; }
 
   #projects {
-    border: solid 1px red;
-    margin: 10% 5% 20% 5%;
+    margin: 10% 15% 20% 15%;
     box-sizing: border-box;
-    width: 90%; }
+    width: 70%; }
     #projects .project-card {
-      border: solid 1px black;
+      background-color: #ececec;
       width: 100%;
       box-sizing: border-box;
-      display: inline-block; }
+      display: inline-block;
+      margin: 5% 0;
+      color: black;
+      text-align: center;
+      font-size: 1.5em;
+      padding: 2% 0; }
+      #projects .project-card .project-desc {
+        font-size: 0.8em; }
+      #projects .project-card img {
+        width: 50%;
+        margin: 5% 25%; }
 
   #about {
     margin: 0 0 5% 0;
