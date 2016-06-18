@@ -316,12 +316,15 @@
       color: black;
       text-align: center;
       font-size: 1.5em;
-      padding: 2% 0; }
+      padding: 0 0 5% 0; }
+      #projects .project-card .project-title {
+        background-color: darkgray;
+        padding: 2px; }
       #projects .project-card .project-desc {
         font-size: 0.8em; }
       #projects .project-card img {
-        width: 50%;
-        margin: 5% 25%; }
+        width: 60%;
+        margin: 5% 20%; }
 
   #about {
     margin: 0 0 5% 0; }
