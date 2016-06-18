@@ -228,7 +228,7 @@
   .menu-wrap {
     display: none; }
     .menu-wrap .menu {
-      background-color: gray;
+      background-color: #063141;
       color: white;
       position: fixed;
       bottom: 20px;
@@ -248,7 +248,7 @@
       height: 0;
       border-top: 18px solid transparent;
       border-bottom: 18px solid transparent;
-      border-left: 18px solid gray;
+      border-left: 18px solid #063141;
       z-index: 3; }
     .menu-wrap a {
       color: white;
@@ -360,7 +360,7 @@
   .menu-wrap {
     display: none; }
     .menu-wrap .menu {
-      background-color: gray;
+      background-color: #063141;
       color: white;
       position: fixed;
       bottom: 20px;
@@ -380,7 +380,7 @@
       height: 0;
       border-top: 18px solid transparent;
       border-bottom: 18px solid transparent;
-      border-left: 18px solid gray;
+      border-left: 18px solid #063141;
       z-index: 3; }
     .menu-wrap a {
       color: white;
