@@ -278,7 +278,8 @@
   #header {
     color: white;
     background-color: #063141;
-    padding: 20px; }
+    padding: 20px;
+    font-size: 0.8em; }
     #header #contact-section {
       display: none; }
       #header #contact-section a {
@@ -303,9 +304,9 @@
       text-decoration: none; }
 
   #projects {
-    margin: 10% 15% 20% 15%;
+    margin: 10% 17.5% 20% 17.5%;
     box-sizing: border-box;
-    width: 70%; }
+    width: 65%; }
     #projects .project-card {
       background-color: #ececec;
       width: 100%;
@@ -323,8 +324,7 @@
         margin: 5% 25%; }
 
   #about {
-    margin: 0 0 5% 0;
-    border: solid 2px gray; }
+    margin: 0 0 5% 0; }
 
   #contact {
     display: none; }
@@ -339,7 +339,6 @@
     font-size: 1.3em;
     width: 80%;
     margin: 2% 10%;
-    border: solid 2px gray;
     text-align: center;
     vertical-align: middle; }
 
@@ -347,8 +346,7 @@
     display: inline-block;
     vertical-align: middle;
     margin: 2% 0 0 25%;
-    border: solid 2px gray;
-    width: 50%; }
+    width: 40%; }
     #large-portrait img {
       width: 100%; }
 
