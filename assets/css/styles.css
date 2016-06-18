@@ -48,7 +48,6 @@
       text-decoration: none; }
 
   #projects {
-    height: 100%;
     border: solid 1px red; }
     #projects #project-wrap {
       width: 50%;
@@ -124,9 +123,6 @@
     display: none; } }
 @media (min-width: 600px) and (max-width: 840px) {
   body {
-    background-color: blue; } }
-@media (max-width: 599px) {
-  body {
     font-size: 1em;
     line-height: 1.2; }
 
@@ -175,7 +171,6 @@
       text-decoration: none; }
 
   #projects {
-    height: 100%;
     border: solid 1px red; }
 
   #about {
@@ -247,7 +242,138 @@
     .menu-wrap .caret {
       position: fixed;
       bottom: 45px;
-      right: 112px;
+      right: 113px;
+      width: 0;
+      height: 0;
+      border-top: 18px solid transparent;
+      border-bottom: 18px solid transparent;
+      border-left: 18px solid gray;
+      z-index: 3; }
+    .menu-wrap a {
+      color: white;
+      text-decoration: none; } }
+@media (max-width: 599px) {
+  body {
+    font-size: 1em;
+    line-height: 1.2; }
+
+  #name-wrap {
+    display: inline-block; }
+
+  #my-name {
+    text-transform: uppercase;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 3em;
+    display: block; }
+
+  #name-subtitle {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 1.5em;
+    text-align: right;
+    display: inline-block;
+    margin-left: 8px; }
+
+  #header {
+    color: white;
+    background-color: #063141;
+    padding: 20px; }
+    #header #contact-section {
+      display: none; }
+      #header #contact-section a {
+        color: white;
+        margin: 0 10px; }
+      #header #contact-section i:hover {
+        color: #4099FF; }
+
+  #left-bar {
+    position: absolute;
+    top: 100;
+    left: 40;
+    font-family: "Open Sans", "Arial", sans-serif;
+    line-height: 2;
+    font-size: 3em;
+    margin-left: 10px;
+    margin-top: 45px; }
+    #left-bar div:hover {
+      text-decoration: underline; }
+    #left-bar a {
+      color: black;
+      text-decoration: none; }
+
+  #projects {
+    border: solid 1px red; }
+
+  #about {
+    margin: 0 0 5% 0;
+    border: solid 2px gray; }
+
+  #contact {
+    display: none; }
+
+  #about-me {
+    margin-top: 3%; }
+
+  #bio {
+    display: inline-block;
+    font-family: "Open Sans", "Arial", sans-serif;
+    line-height: 1.5;
+    font-size: 1.3em;
+    width: 80%;
+    margin: 2% 10%;
+    border: solid 2px gray;
+    text-align: center;
+    vertical-align: middle; }
+
+  #large-portrait {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2% 0 0 25%;
+    border: solid 2px gray;
+    width: 50%; }
+    #large-portrait img {
+      width: 100%; }
+
+  .back-to-top {
+    display: block;
+    font-family: "Open Sans", "Arial", sans-serif;
+    text-decoration: none;
+    color: black;
+    text-align: center; }
+
+  .float-icon {
+    padding: 18px 20px;
+    border-radius: 100%;
+    display: inline;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 9;
+    background-color: #063141;
+    color: white; }
+    .float-icon .icon-wrap {
+      width: 45px;
+      text-align: center; }
+
+  .menu-wrap {
+    display: none; }
+    .menu-wrap .menu {
+      background-color: gray;
+      color: white;
+      position: fixed;
+      bottom: 30px;
+      right: 130px;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 1.5em; }
+    .menu-wrap div {
+      display: inline;
+      margin-right: 18px; }
+    .menu-wrap .caret {
+      position: fixed;
+      bottom: 45px;
+      right: 113px;
       width: 0;
       height: 0;
       border-top: 18px solid transparent;
