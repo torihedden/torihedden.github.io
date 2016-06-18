@@ -68,6 +68,15 @@
 
   #projects {
     border: solid 1px red;
+    margin: 5%;
+    box-sizing: border-box;
+    width: 90%;
+    .project-card {
+      border: solid 1px black;
+      width: (100% / 2);
+      box-sizing: border-box;
+      display: inline-block;
+    }
   }
 
   #about {

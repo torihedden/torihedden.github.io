@@ -68,28 +68,14 @@
 
   #projects {
     border: solid 1px red;
-    #project-wrap {
-      width: 50%;
-      margin-left: 30%;
-      margin-top: 2%;
+    margin: 5%;
+    box-sizing: border-box;
+    width: 90%;
+    .project-card {
+      border: solid 1px black;
+      width: (100% / 3);
+      box-sizing: border-box;
       display: inline-block;
-      .project-square {
-        width: 200px;
-        height: 200px;
-        display: inline-block;
-        margin-right: 15px;
-        margin-bottom: 15px;
-      }
-      .project-square:hover {
-
-      }
-      .project-rect {
-        width: 400px;
-        height: 200px;
-        display: inline-block;
-        margin-right: 15px;
-        margin-bottom: 15px;
-      }
     }
   }
 

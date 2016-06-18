@@ -48,24 +48,15 @@
       text-decoration: none; }
 
   #projects {
-    border: solid 1px red; }
-    #projects #project-wrap {
-      width: 50%;
-      margin-left: 30%;
-      margin-top: 2%;
+    border: solid 1px red;
+    margin: 5%;
+    box-sizing: border-box;
+    width: 90%; }
+    #projects .project-card {
+      border: solid 1px black;
+      width: 33.33333%;
+      box-sizing: border-box;
       display: inline-block; }
-      #projects #project-wrap .project-square {
-        width: 200px;
-        height: 200px;
-        display: inline-block;
-        margin-right: 15px;
-        margin-bottom: 15px; }
-      #projects #project-wrap .project-rect {
-        width: 400px;
-        height: 200px;
-        display: inline-block;
-        margin-right: 15px;
-        margin-bottom: 15px; }
 
   #about {
     margin: 0 0 5% 0;
@@ -171,7 +162,15 @@
       text-decoration: none; }
 
   #projects {
-    border: solid 1px red; }
+    border: solid 1px red;
+    margin: 5%;
+    box-sizing: border-box;
+    width: 90%; }
+    #projects .project-card {
+      border: solid 1px black;
+      width: 50%;
+      box-sizing: border-box;
+      display: inline-block; }
 
   #about {
     margin: 0 0 5% 0;
@@ -303,7 +302,15 @@
       text-decoration: none; }
 
   #projects {
-    border: solid 1px red; }
+    border: solid 1px red;
+    margin: 10% 5% 20% 5%;
+    box-sizing: border-box;
+    width: 90%; }
+    #projects .project-card {
+      border: solid 1px black;
+      width: 100%;
+      box-sizing: border-box;
+      display: inline-block; }
 
   #about {
     margin: 0 0 5% 0;
