@@ -211,18 +211,19 @@
     text-align: center; }
 
   .float-icon {
-    padding: 18px 20px;
+    padding: 12px 10px;
     border-radius: 100%;
     display: inline;
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 20px;
     z-index: 9;
     background-color: #063141;
     color: white; }
     .float-icon .icon-wrap {
-      width: 45px;
-      text-align: center; }
+      width: 40px;
+      text-align: center;
+      font-size: 0.8em; }
 
   .menu-wrap {
     display: none; }
@@ -230,8 +231,8 @@
       background-color: gray;
       color: white;
       position: fixed;
-      bottom: 30px;
-      right: 130px;
+      bottom: 20px;
+      right: 90px;
       padding: 10px;
       text-align: center;
       border-radius: 10px;
@@ -241,8 +242,8 @@
       margin-right: 18px; }
     .menu-wrap .caret {
       position: fixed;
-      bottom: 45px;
-      right: 113px;
+      bottom: 35px;
+      right: 75px;
       width: 0;
       height: 0;
       border-top: 18px solid transparent;
@@ -342,18 +343,19 @@
     text-align: center; }
 
   .float-icon {
-    padding: 18px 20px;
+    padding: 12px 10px;
     border-radius: 100%;
     display: inline;
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 20px;
     z-index: 9;
     background-color: #063141;
     color: white; }
     .float-icon .icon-wrap {
-      width: 45px;
-      text-align: center; }
+      width: 40px;
+      text-align: center;
+      font-size: 0.8em; }
 
   .menu-wrap {
     display: none; }
@@ -361,8 +363,8 @@
       background-color: gray;
       color: white;
       position: fixed;
-      bottom: 30px;
-      right: 130px;
+      bottom: 20px;
+      right: 92px;
       padding: 10px;
       text-align: center;
       border-radius: 10px;
@@ -372,8 +374,8 @@
       margin-right: 18px; }
     .menu-wrap .caret {
       position: fixed;
-      bottom: 45px;
-      right: 113px;
+      bottom: 35px;
+      right: 75px;
       width: 0;
       height: 0;
       border-top: 18px solid transparent;
