@@ -25,12 +25,15 @@
     background-color: #063141;
     padding: 20px; }
     #header #contact-section {
-      display: inline-block; }
+      display: inline-block;
+      position: absolute;
+      right: 2%;
+      top: 10%; }
       #header #contact-section a {
         color: white;
         margin: 0 10px; }
       #header #contact-section i:hover {
-        color: #4099FF; }
+        color: #09b3cd; }
 
   #left-bar {
     position: absolute;
@@ -47,20 +50,109 @@
       color: black;
       text-decoration: none; }
 
-  #projects {
-    border: solid 1px red;
+  .about-button-wrap {
+    display: inline-block;
     margin: 5%;
+    width: 90%; }
+    .about-button-wrap .about-button {
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 1em;
+      text-decoration: none;
+      background-color: #14d7f5;
+      border-radius: 35px;
+      padding: 1% 5%;
+      color: white;
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: 300;
+      border: solid 2px transparent; }
+      .about-button-wrap .about-button:hover {
+        background-color: white;
+        color: #14d7f5;
+        border: solid 2px #14d7f5; }
+    .about-button-wrap .about-button2 {
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 1em;
+      text-decoration: none;
+      background-color: #067384;
+      border-radius: 35px;
+      padding: 1% 5%;
+      color: white;
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: 300;
+      border: solid 2px transparent; }
+      .about-button-wrap .about-button2:hover {
+        background-color: white;
+        color: #067384;
+        border: solid 2px #067384; }
+
+  #projects {
+    margin: 10% 5%;
     box-sizing: border-box;
     width: 90%; }
-    #projects .project-card {
-      border: solid 1px black;
+    #projects .card-wrap {
       width: 33.33333%;
+      display: inline-block;
+      margin: 0 0 2% 0; }
+    #projects .project-card {
+      border: solid 1px #ececec;
       box-sizing: border-box;
-      display: inline-block; }
+      display: inline-block;
+      color: black;
+      text-align: center;
+      font-size: 1.5em;
+      padding: 5% 0;
+      border-radius: 2%;
+      font-family: "Open Sans", "Arial", sans-serif; }
+      #projects .project-card .title-desc {
+        display: inline-block;
+        width: 80%;
+        margin: 5% 0 0 0; }
+        #projects .project-card .title-desc .project-title {
+          padding: 2px;
+          font-family: "Montserrat", sans-serif;
+          font-size: 1.2em; }
+        #projects .project-card .title-desc .project-desc {
+          font-size: 0.8em;
+          font-weight: 300;
+          margin-top: 40px; }
+        #projects .project-card .title-desc .tech-desc {
+          margin: 25px 0 0 0;
+          font-size: 0.8em;
+          font-weight: 300; }
+      #projects .project-card .button-wrap {
+        display: block;
+        margin-top: 5%; }
+        #projects .project-card .button-wrap a {
+          text-decoration: none;
+          background-color: #14d7f5;
+          border-radius: 35px;
+          padding: 2% 8%;
+          color: white;
+          display: inline-block;
+          margin-top: 20px;
+          font-weight: 300;
+          font-size: 0.9em;
+          border: solid 2px transparent; }
+          #projects .project-card .button-wrap a:hover {
+            background-color: white;
+            color: #14d7f5;
+            border: solid 2px #14d7f5; }
+        #projects .project-card .button-wrap .GH-button {
+          background-color: #067384; }
+          #projects .project-card .button-wrap .GH-button:hover {
+            background-color: white;
+            color: #067384;
+            border: solid 2px #067384; }
+      #projects .project-card img {
+        width: 50%;
+        margin: 0 25%;
+        display: block;
+        border: solid 1px lightgray; }
 
   #about {
-    margin: 0 0 5% 0;
-    border: solid 2px red; }
+    margin: 0 0 5% 0; }
 
   #contact {
     height: 300px;
@@ -93,27 +185,19 @@
     width: 35%;
     margin-left: 2%;
     margin-right: 5%;
-    border: solid 2px blue;
     text-align: left;
     vertical-align: middle; }
 
   #large-portrait {
     display: inline-block;
     vertical-align: middle;
-    margin: 2% 0 0 15%;
-    border: solid 2px green; }
-
-  .back-to-top {
-    display: block;
-    font-family: "Open Sans", "Arial", sans-serif;
-    text-decoration: none;
-    color: black;
-    text-align: center; }
+    margin: 2% 0 0 15%; }
 
   .float-icon, .menu-wrap {
     display: none; } }
 @media (min-width: 600px) and (max-width: 840px) {
   body {
+    box-sizing: border-box;
     font-size: 1em;
     line-height: 1.2; }
 
@@ -162,19 +246,73 @@
       text-decoration: none; }
 
   #projects {
-    border: solid 1px red;
-    margin: 5%;
+    margin: 10% 5% 20% 5%;
     box-sizing: border-box;
     width: 90%; }
-    #projects .project-card {
-      border: solid 1px black;
+    #projects .card-wrap {
       width: 50%;
+      display: inline-block;
+      margin: 0 0 2% 0; }
+    #projects .project-card {
+      border: solid 1px #ececec;
       box-sizing: border-box;
-      display: inline-block; }
+      display: inline-block;
+      color: black;
+      text-align: center;
+      font-size: 1.5em;
+      padding: 5% 0;
+      border-radius: 2%;
+      font-family: "Open Sans", "Arial", sans-serif; }
+      #projects .project-card .img-wrap {
+        border: solid 1px red; }
+      #projects .project-card .title-desc {
+        display: inline-block;
+        width: 80%;
+        margin: 5% 0 0 0; }
+        #projects .project-card .title-desc .project-title {
+          padding: 2px;
+          font-family: "Montserrat", sans-serif;
+          font-size: 1.2em; }
+        #projects .project-card .title-desc .project-desc {
+          font-size: 0.8em;
+          font-weight: 300;
+          margin-top: 40px; }
+        #projects .project-card .title-desc .tech-desc {
+          margin: 25px 0 0 0;
+          font-size: 0.8em;
+          font-weight: 300; }
+      #projects .project-card .button-wrap {
+        display: block;
+        margin-top: 5%; }
+        #projects .project-card .button-wrap a {
+          text-decoration: none;
+          background-color: #14d7f5;
+          border-radius: 35px;
+          padding: 2% 8%;
+          color: white;
+          display: inline-block;
+          margin-top: 20px;
+          font-weight: 300;
+          font-size: 0.9em;
+          border: solid 2px transparent; }
+          #projects .project-card .button-wrap a:hover {
+            background-color: white;
+            color: #14d7f5;
+            border: solid 2px #14d7f5; }
+        #projects .project-card .button-wrap .GH-button {
+          background-color: #067384; }
+          #projects .project-card .button-wrap .GH-button:hover {
+            background-color: white;
+            color: #067384;
+            border: solid 2px #067384; }
+      #projects .project-card img {
+        width: 50%;
+        margin: 0 25%;
+        display: block;
+        border: solid 1px lightgray; }
 
   #about {
-    margin: 0 0 5% 0;
-    border: solid 2px gray; }
+    margin: 0 0 5% 0; }
 
   #contact {
     display: none; }
@@ -189,25 +327,16 @@
     font-size: 1.3em;
     width: 80%;
     margin: 2% 10%;
-    border: solid 2px gray;
     text-align: center;
     vertical-align: middle; }
 
   #large-portrait {
     display: inline-block;
     vertical-align: middle;
-    margin: 2% 0 0 25%;
-    border: solid 2px gray;
-    width: 50%; }
+    margin: 2% 0 0 35%;
+    width: 30%; }
     #large-portrait img {
       width: 100%; }
-
-  .back-to-top {
-    display: block;
-    font-family: "Open Sans", "Arial", sans-serif;
-    text-decoration: none;
-    color: black;
-    text-align: center; }
 
   .float-icon {
     padding: 12px 10px;
@@ -381,13 +510,6 @@
     #large-portrait img {
       width: 100%; }
 
-  .back-to-top {
-    display: block;
-    font-family: "Open Sans", "Arial", sans-serif;
-    text-decoration: none;
-    color: black;
-    text-align: center; }
-
   .float-icon {
     padding: 12px 10px;
     border-radius: 100%;
@@ -560,13 +682,6 @@
     width: 40%; }
     #large-portrait img {
       width: 100%; }
-
-  .back-to-top {
-    display: block;
-    font-family: "Open Sans", "Arial", sans-serif;
-    text-decoration: none;
-    color: black;
-    text-align: center; }
 
   .float-icon {
     padding: 12px 10px;
