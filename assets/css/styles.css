@@ -351,7 +351,8 @@
       #projects .project-card img {
         width: 30%;
         margin: 0 5% 0 0;
-        display: inline-block; }
+        display: inline-block;
+        border: solid 1px lightgray; }
 
   #about {
     margin: 0 0 5% 0; }
@@ -497,8 +498,9 @@
       padding: 5% 0;
       border-radius: 2%; }
       #projects .project-card .title-desc {
-        display: inline-block;
-        width: 55%; }
+        display: block;
+        width: 90%;
+        margin: 0 5%; }
         #projects .project-card .title-desc .project-title {
           padding: 2px;
           font-family: "Montserrat", sans-serif;
@@ -518,7 +520,7 @@
           text-decoration: none;
           background-color: #14d7f5;
           border-radius: 35px;
-          padding: 2% 8%;
+          padding: 2% 5%;
           color: white;
           display: inline-block;
           margin-top: 20px;
@@ -529,7 +531,8 @@
       #projects .project-card img {
         width: 50%;
         margin: 0 25% 5% 25%;
-        display: block; }
+        display: block;
+        border: solid 1px lightgray; }
 
   #about {
     margin: 0 0 5% 0; }
