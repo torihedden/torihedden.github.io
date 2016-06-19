@@ -4,10 +4,13 @@ $navy2: #063141;
 $purple: #582c83;
 $sea-foam-green: #9eb7b9;
 $warm-gray: #484848;
+$accent-blue: #14d7f5;
 $font: "Open Sans", "Arial", sans-serif;
+$header-font: "Montserrat", sans-serif;
 
 
 //media queries
 @import "desktopView";
 @import "tabletView";
 @import "phoneView";
+@import "smallPhoneView";

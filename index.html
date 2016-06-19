@@ -3,6 +3,7 @@
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -46,18 +47,29 @@
       <!-- I know the next piece of code looks really dumb but inline-block elements respect whitespace in the markup so I have to get rid of it so these divs will be the correct width. -->
 
       <div id = "projects">
-          <a href = "http://foodstre.am">
-            <div class = "project-card">
-              <div class = "project-title">Foodstream</div>
-              <img src = "assets/images/foodstream-preview.png"/>
-              <div class = "project-desc">final project for The Iron Yard<br>Angular, Ruby on Rails, AWS</div>
-            </div></a><!--
 
-        --><a href = "http://www.youareverysmart.us/"><div class = "project-card">
-              <div class = "project-title">You Are Very Smart</div>
+            <div class = "project-card">
+              <img src = "assets/images/foodstream-landing.png"/>
+              <div class = "title-desc">
+                <div class = "project-title">Foodstream</div>
+                <div class = "project-desc">final project for The Iron Yard</div>
+                <div class = "tech-desc">Angular, Ruby on Rails, Sass, AWS</div>
+                <div class = "button-wrap">
+                  <a href = "http://foodstre.am" class = "site-button">Visit Site</a>
+                  <a href = "#" class = "GH-button">View GitHub</a>
+                </div>
+              </div>
+            </div><!--
+
+        --><div class = "project-card">
               <img src = "assets/images/MEAN-app-preview.jpg-large"/>
-              <div class = "project-desc">converts English to pseudo-intellectualisms<br>MEAN stack, Bootstrap, Angular</div>
-          </div></a><!--
+              <div class = "title-desc">
+                <div class = "project-title">You Are Very Smart</div>
+                <div class = "project-desc">converts English to pseudo-intellectualisms</div>
+                <div class = "tech-desc">MEAN stack, Bootstrap, Angular</div>
+                <a href = "http://www.youareverysmart.us/"
+              </div>
+          </div><!--
 
         --><a href = "http://torihedden.com/AppointmentApp/index.html">
             <div class = "project-card">
@@ -107,6 +119,11 @@
           <div>
             <a href = "mailto:tori.hedden@gmail.com">
               <i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div>
+            <a href = "https://github.com/torihedden">
+              <i class="fa fa-github fa-2x" aria-hidden="true"></i>
             </a>
           </div>
           <div>

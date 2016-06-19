@@ -304,11 +304,11 @@
       text-decoration: none; }
 
   #projects {
-    margin: 10% 17.5% 20% 17.5%;
+    margin: 10% 5% 20% 5%;
     box-sizing: border-box;
-    width: 65%; }
+    width: 90%; }
     #projects .project-card {
-      background-color: #ececec;
+      border: solid 1px #ececec;
       width: 100%;
       box-sizing: border-box;
       display: inline-block;
@@ -316,15 +316,220 @@
       color: black;
       text-align: center;
       font-size: 1.5em;
-      padding: 0 0 5% 0; }
-      #projects .project-card .project-title {
-        background-color: darkgray;
-        padding: 2px; }
-      #projects .project-card .project-desc {
-        font-size: 0.8em; }
+      padding: 5% 0;
+      border-radius: 2%; }
+      #projects .project-card .title-desc {
+        display: inline-block;
+        width: 55%; }
+        #projects .project-card .title-desc .project-title {
+          padding: 2px;
+          font-family: "Montserrat", sans-serif;
+          font-size: 1.2em; }
+        #projects .project-card .title-desc .project-desc {
+          font-size: 0.8em;
+          font-weight: 300;
+          margin-top: 40px; }
+        #projects .project-card .title-desc .tech-desc {
+          margin: 25px 0 0 0;
+          font-size: 0.8em;
+          font-weight: 300; }
+      #projects .project-card .button-wrap {
+        display: block;
+        margin-top: 5%; }
+        #projects .project-card .button-wrap a {
+          text-decoration: none;
+          background-color: #14d7f5;
+          border-radius: 35px;
+          padding: 2% 8%;
+          color: white;
+          display: inline-block;
+          margin-top: 20px;
+          font-weight: 300;
+          font-size: 0.9em; }
+        #projects .project-card .button-wrap .GH-button {
+          background-color: #067384; }
       #projects .project-card img {
-        width: 60%;
-        margin: 5% 20%; }
+        width: 30%;
+        margin: 0 5% 0 0;
+        display: inline-block; }
+
+  #about {
+    margin: 0 0 5% 0; }
+
+  #contact {
+    display: none; }
+
+  #about-me {
+    margin-top: 3%; }
+
+  #bio {
+    display: inline-block;
+    font-family: "Open Sans", "Arial", sans-serif;
+    line-height: 1.5;
+    font-size: 1.3em;
+    width: 80%;
+    margin: 2% 10%;
+    text-align: center;
+    vertical-align: middle; }
+
+  #large-portrait {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2% 0 0 25%;
+    width: 40%; }
+    #large-portrait img {
+      width: 100%; }
+
+  .back-to-top {
+    display: block;
+    font-family: "Open Sans", "Arial", sans-serif;
+    text-decoration: none;
+    color: black;
+    text-align: center; }
+
+  .float-icon {
+    padding: 12px 10px;
+    border-radius: 100%;
+    display: inline;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9;
+    background-color: #063141;
+    color: white; }
+    .float-icon .icon-wrap {
+      width: 40px;
+      text-align: center;
+      font-size: 0.8em; }
+
+  .menu-wrap {
+    display: none; }
+    .menu-wrap .menu {
+      background-color: #063141;
+      color: white;
+      position: fixed;
+      bottom: 20px;
+      right: 92px;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 1.5em; }
+    .menu-wrap div {
+      display: inline;
+      margin-right: 18px; }
+    .menu-wrap .caret {
+      position: fixed;
+      bottom: 35px;
+      right: 75px;
+      width: 0;
+      height: 0;
+      border-top: 18px solid transparent;
+      border-bottom: 18px solid transparent;
+      border-left: 18px solid #063141;
+      z-index: 3; }
+    .menu-wrap a {
+      color: white;
+      text-decoration: none; } }
+@media (max-width: 475px) {
+  body {
+    font-size: 1em;
+    line-height: 1.2;
+    font-family: "Open Sans", "Arial", sans-serif; }
+
+  #name-wrap {
+    display: inline-block; }
+
+  #my-name {
+    text-transform: uppercase;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 3em;
+    display: block; }
+
+  #name-subtitle {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 1.5em;
+    text-align: right;
+    display: inline-block;
+    margin-left: 8px; }
+
+  #header {
+    color: white;
+    background-color: #063141;
+    padding: 20px;
+    font-size: 0.8em; }
+    #header #contact-section {
+      display: none; }
+      #header #contact-section a {
+        color: white;
+        margin: 0 10px; }
+      #header #contact-section i:hover {
+        color: #4099FF; }
+
+  #left-bar {
+    position: absolute;
+    top: 100;
+    left: 40;
+    font-family: "Open Sans", "Arial", sans-serif;
+    line-height: 2;
+    font-size: 3em;
+    margin-left: 10px;
+    margin-top: 45px; }
+    #left-bar div:hover {
+      text-decoration: underline; }
+    #left-bar a {
+      color: black;
+      text-decoration: none; }
+
+  #projects {
+    margin: 10% 5% 20% 5%;
+    box-sizing: border-box;
+    width: 90%; }
+    #projects .project-card {
+      border: solid 1px #ececec;
+      width: 100%;
+      box-sizing: border-box;
+      display: inline-block;
+      margin: 5% 0;
+      color: black;
+      text-align: center;
+      font-size: 1.5em;
+      padding: 5% 0;
+      border-radius: 2%; }
+      #projects .project-card .title-desc {
+        display: inline-block;
+        width: 55%; }
+        #projects .project-card .title-desc .project-title {
+          padding: 2px;
+          font-family: "Montserrat", sans-serif;
+          font-size: 1.2em; }
+        #projects .project-card .title-desc .project-desc {
+          font-size: 0.8em;
+          font-weight: 300;
+          margin-top: 40px; }
+        #projects .project-card .title-desc .tech-desc {
+          margin: 25px 0 0 0;
+          font-size: 0.8em;
+          font-weight: 300; }
+      #projects .project-card .button-wrap {
+        display: block;
+        margin-top: 5%; }
+        #projects .project-card .button-wrap a {
+          text-decoration: none;
+          background-color: #14d7f5;
+          border-radius: 35px;
+          padding: 2% 8%;
+          color: white;
+          display: inline-block;
+          margin-top: 20px;
+          font-weight: 300;
+          font-size: 0.9em; }
+        #projects .project-card .button-wrap .GH-button {
+          background-color: #067384; }
+      #projects .project-card img {
+        width: 50%;
+        margin: 0 25% 5% 25%;
+        display: block; }
 
   #about {
     margin: 0 0 5% 0; }

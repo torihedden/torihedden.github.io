@@ -1,5 +1,5 @@
 // phone to tablet
-@media (max-width : 599px) {
+@media (max-width : 475px) {
 
   body {
     font-size: 1em;
@@ -129,9 +129,9 @@
       }
 
       img {
-        width: 30%;
-        margin: 0 5% 0 0;
-        display: inline-block;
+        width: 50%;
+        margin: 0 25% 5% 25%;
+        display: block;
       }
     }
   }
