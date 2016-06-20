@@ -116,17 +116,21 @@
     margin: 10% 5%;
     box-sizing: border-box;
     width: 90%;
-    // border: solid 1px red;
+    border: solid 1px red;
     .card-wrap {
       width: (100% / 3);
       // padding: 2%;
       display: inline-block;
-      margin: 0 0 2% 0;
+      // margin: 0 0 2% 0;
+      // border: solid 1px blue;
+      box-sizing: border-box;
     }
     .project-card {
       .img-wrap {
         // border: solid 1px red;
       }
+      width: 90%;
+      margin: 5%;
       border: solid 1px #ececec;
       box-sizing: border-box;
       display: inline-block;

@@ -90,12 +90,15 @@
   #projects {
     margin: 10% 5%;
     box-sizing: border-box;
-    width: 90%; }
+    width: 90%;
+    border: solid 1px red; }
     #projects .card-wrap {
       width: 33.33333%;
       display: inline-block;
-      margin: 0 0 2% 0; }
+      box-sizing: border-box; }
     #projects .project-card {
+      width: 90%;
+      margin: 5%;
       border: solid 1px #ececec;
       box-sizing: border-box;
       display: inline-block;
@@ -262,6 +265,8 @@
       display: inline-block;
       margin: 0 0 2% 0; }
     #projects .project-card {
+      width: 90%;
+      margin: 5%;
       border: solid 1px #ececec;
       box-sizing: border-box;
       display: inline-block;
