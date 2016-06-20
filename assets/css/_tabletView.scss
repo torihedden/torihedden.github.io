@@ -159,15 +159,11 @@
 
   #about {
     margin: 0 0 5% 0;
-    // border: solid 2px gray;
+    border: solid 2px gray;
   }
 
   #contact {
     display: none;
-  }
-
-  #about-me {
-    margin-top: 3%;
   }
 
   #bio {
@@ -175,9 +171,9 @@
     font-family: $font;
     line-height: 1.5;
     font-size: 1.3em;
-    width: 80%;
-    margin: 2% 10%;
-    // border: solid 2px gray;
+    width: 40%;
+    margin: 2%;
+    border: solid 2px gray;
     text-align: center;
     vertical-align: middle;
   }
@@ -185,8 +181,8 @@
   #large-portrait {
     display: inline-block;
     vertical-align: middle;
-    margin: 2% 0 0 35%;
-    // border: solid 2px gray;
+    margin: 2% 0 0 15%;
+    border: solid 2px gray;
     width: 30%;
     img {
       width: 100%;

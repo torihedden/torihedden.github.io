@@ -28,7 +28,7 @@
       display: inline-block;
       position: absolute;
       right: 2%;
-      top: 10%; }
+      top: 5%; }
       #header #contact-section a {
         color: white;
         margin: 0 10px; }
@@ -152,27 +152,35 @@
         border: solid 1px lightgray; }
 
   #about {
-    margin: 0 0 5% 0; }
+    margin: 0 0 5% 0;
+    border: solid 2px red; }
 
   #contact {
     height: 300px;
     background-color: #063141;
-    font-family: "Open Sans", "Arial", sans-serif; }
+    font-family: "Open Sans", "Arial", sans-serif;
+    padding: 5% 0 0 0; }
     #contact #contact-wrap {
-      vertical-align: middle; }
+      text-align: center;
+      vertical-align: middle;
+      width: 70%;
+      margin: 0 15%; }
       #contact #contact-wrap div {
         padding: 2%;
-        text-align: center;
         font-size: 1em;
-        color: white; }
+        color: white;
+        display: inline-block; }
         #contact #contact-wrap div a {
           text-decoration: none;
           color: white; }
         #contact #contact-wrap div a:hover {
           text-decoration: underline; }
+      #contact #contact-wrap span {
+        color: gray; }
       #contact #contact-wrap #copyright {
         margin-top: 2%;
-        font-size: 0.8em; }
+        font-size: 0.8em;
+        display: block; }
 
   #about-me {
     margin-top: 3%; }
@@ -312,28 +320,28 @@
         border: solid 1px lightgray; }
 
   #about {
-    margin: 0 0 5% 0; }
+    margin: 0 0 5% 0;
+    border: solid 2px gray; }
 
   #contact {
     display: none; }
-
-  #about-me {
-    margin-top: 3%; }
 
   #bio {
     display: inline-block;
     font-family: "Open Sans", "Arial", sans-serif;
     line-height: 1.5;
     font-size: 1.3em;
-    width: 80%;
-    margin: 2% 10%;
+    width: 40%;
+    margin: 2%;
+    border: solid 2px gray;
     text-align: center;
     vertical-align: middle; }
 
   #large-portrait {
     display: inline-block;
     vertical-align: middle;
-    margin: 2% 0 0 35%;
+    margin: 2% 0 0 15%;
+    border: solid 2px gray;
     width: 30%; }
     #large-portrait img {
       width: 100%; }
