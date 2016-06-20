@@ -50,23 +50,6 @@
     }
   }
 
-  #left-bar {
-    position: absolute;
-    top: 100;
-    left: 40;
-    font-family: $font;
-    line-height: 2;
-    font-size: 3em;
-    margin-left: 10px;
-    margin-top: 45px;
-    div:hover {
-      text-decoration: underline;
-    }
-    a {
-      color: black;
-      text-decoration: none;
-    }
-  }
 
   #projects {
     margin: 10% 5% 20% 5%;
@@ -140,14 +123,52 @@
   #about {
     margin: 0 0 5% 0;
     // border: solid 2px gray;
+    .about-button-wrap {
+      display: inline-block;
+      margin: 5%;
+      // border: solid 1px red;
+      width: 90%;
+      .about-button {
+        font-family: $font;
+        font-size: 1em;
+        text-decoration: none;
+        background-color: $accent-blue;
+        border-radius: 35px;
+        padding: 1% 5%;
+        color: white;
+        display: inline-block;
+        margin-top: 20px;
+        font-weight: 300;
+        border: solid 2px transparent;
+          &:hover {
+            background-color: white;
+            color: $accent-blue;
+            border: solid 2px $accent-blue;
+          }
+      }
+      .about-button2 {
+        font-family: $font;
+        font-size: 1em;
+        text-decoration: none;
+        background-color: darken($accent-blue, 25%);
+        border-radius: 35px;
+        padding: 1% 5%;
+        color: white;
+        display: inline-block;
+        margin-top: 20px;
+        font-weight: 300;
+        border: solid 2px transparent;
+        &:hover {
+          background-color: white;
+          color: darken($accent-blue, 25%);
+          border: solid 2px darken($accent-blue, 25%);
+        }
+      }
+    }
   }
 
   #contact {
     display: none;
-  }
-
-  #about-me {
-    margin-top: 3%;
   }
 
   #bio {

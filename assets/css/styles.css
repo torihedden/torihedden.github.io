@@ -320,8 +320,7 @@
         border: solid 1px lightgray; }
 
   #about {
-    margin: 0 0 5% 0;
-    border: solid 2px gray; }
+    margin: 0 0 5% 0; }
 
   #contact {
     display: none; }
@@ -334,7 +333,7 @@
     width: 40%;
     margin: 2%;
     border: solid 2px gray;
-    text-align: center;
+    text-align: left;
     vertical-align: middle; }
 
   #large-portrait {
@@ -345,6 +344,43 @@
     width: 30%; }
     #large-portrait img {
       width: 100%; }
+
+  .about-button-wrap {
+    display: inline-block;
+    margin: 5%;
+    width: 90%; }
+    .about-button-wrap .about-button {
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 1em;
+      text-decoration: none;
+      background-color: #14d7f5;
+      border-radius: 35px;
+      padding: 1% 5%;
+      color: white;
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: 300;
+      border: solid 2px transparent; }
+      .about-button-wrap .about-button:hover {
+        background-color: white;
+        color: #14d7f5;
+        border: solid 2px #14d7f5; }
+    .about-button-wrap .about-button2 {
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 1em;
+      text-decoration: none;
+      background-color: #067384;
+      border-radius: 35px;
+      padding: 1% 5%;
+      color: white;
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: 300;
+      border: solid 2px transparent; }
+      .about-button-wrap .about-button2:hover {
+        background-color: white;
+        color: #067384;
+        border: solid 2px #067384; }
 
   .float-icon {
     padding: 12px 10px;
@@ -425,21 +461,6 @@
       #header #contact-section i:hover {
         color: #4099FF; }
 
-  #left-bar {
-    position: absolute;
-    top: 100;
-    left: 40;
-    font-family: "Open Sans", "Arial", sans-serif;
-    line-height: 2;
-    font-size: 3em;
-    margin-left: 10px;
-    margin-top: 45px; }
-    #left-bar div:hover {
-      text-decoration: underline; }
-    #left-bar a {
-      color: black;
-      text-decoration: none; }
-
   #projects {
     margin: 10% 5% 20% 5%;
     box-sizing: border-box;
@@ -493,12 +514,45 @@
 
   #about {
     margin: 0 0 5% 0; }
+    #about .about-button-wrap {
+      display: inline-block;
+      margin: 5%;
+      width: 90%; }
+      #about .about-button-wrap .about-button {
+        font-family: "Open Sans", "Arial", sans-serif;
+        font-size: 1em;
+        text-decoration: none;
+        background-color: #14d7f5;
+        border-radius: 35px;
+        padding: 1% 5%;
+        color: white;
+        display: inline-block;
+        margin-top: 20px;
+        font-weight: 300;
+        border: solid 2px transparent; }
+        #about .about-button-wrap .about-button:hover {
+          background-color: white;
+          color: #14d7f5;
+          border: solid 2px #14d7f5; }
+      #about .about-button-wrap .about-button2 {
+        font-family: "Open Sans", "Arial", sans-serif;
+        font-size: 1em;
+        text-decoration: none;
+        background-color: #067384;
+        border-radius: 35px;
+        padding: 1% 5%;
+        color: white;
+        display: inline-block;
+        margin-top: 20px;
+        font-weight: 300;
+        border: solid 2px transparent; }
+        #about .about-button-wrap .about-button2:hover {
+          background-color: white;
+          color: #067384;
+          border: solid 2px #067384; }
 
   #contact {
     display: none; }
-
-  #about-me {
-    margin-top: 3%; }
 
   #bio {
     display: inline-block;
