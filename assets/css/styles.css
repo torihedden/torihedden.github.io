@@ -26,9 +26,8 @@
     padding: 20px; }
     #header #contact-section {
       display: inline-block;
-      position: absolute;
-      right: 2%;
-      top: 5%; }
+      position: relative;
+      height: 5%; }
       #header #contact-section a {
         color: white;
         margin: 0 10px; }
@@ -90,8 +89,7 @@
   #projects {
     margin: 10% 5%;
     box-sizing: border-box;
-    width: 90%;
-    border: solid 1px red; }
+    width: 90%; }
     #projects .card-wrap {
       width: 33.33333%;
       display: inline-block;
@@ -99,7 +97,7 @@
     #projects .project-card {
       width: 90%;
       margin: 5%;
-      border: solid 1px #ececec;
+      border: solid 1px lightgray;
       box-sizing: border-box;
       display: inline-block;
       color: black;
@@ -108,25 +106,33 @@
       padding: 5% 0;
       border-radius: 2%;
       font-family: "Open Sans", "Arial", sans-serif; }
+      #projects .project-card .img-wrap {
+        border: solid 1px red;
+        height: 52%; }
       #projects .project-card .title-desc {
         display: inline-block;
-        width: 80%;
+        border: solid 1px blue;
+        width: 90%;
         margin: 5% 0 0 0; }
         #projects .project-card .title-desc .project-title {
           padding: 2px;
           font-family: "Montserrat", sans-serif;
-          font-size: 1.2em; }
+          font-size: 1.2em;
+          border: solid 1px gray;
+          height: 10%; }
         #projects .project-card .title-desc .project-desc {
           font-size: 0.8em;
           font-weight: 300;
-          margin-top: 40px; }
+          border: solid 1px purple;
+          height: 10%; }
         #projects .project-card .title-desc .tech-desc {
-          margin: 25px 0 0 0;
           font-size: 0.8em;
-          font-weight: 300; }
+          font-weight: 300;
+          border: solid 1px red;
+          height: 8%; }
       #projects .project-card .button-wrap {
         display: block;
-        margin-top: 5%; }
+        border: solid 1px red; }
         #projects .project-card .button-wrap a {
           text-decoration: none;
           background-color: #14d7f5;
@@ -149,14 +155,14 @@
             color: #067384;
             border: solid 2px #067384; }
       #projects .project-card img {
-        width: 50%;
-        margin: 0 25%;
+        width: 60%;
+        margin: 0 20%;
         display: block;
-        border: solid 1px lightgray; }
+        border: solid 1px #ededed;
+        border: solid 1px red; }
 
   #about {
-    margin: 0 0 5% 0;
-    border: solid 2px red; }
+    margin: 0 0 5% 0; }
 
   #contact {
     height: 300px;
