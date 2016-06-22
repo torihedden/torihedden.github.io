@@ -271,7 +271,11 @@
     // border: solid 2px green;
   }
 
-  .float-icon, .menu-wrap {
+  .float-icon {
+    display: none;
+  }
+
+  .menu-wrap {
     display: none;
   }
 }

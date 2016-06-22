@@ -203,7 +203,10 @@
     vertical-align: middle;
     margin: 2% 0 0 15%; }
 
-  .float-icon, .menu-wrap {
+  .float-icon {
+    display: none; }
+
+  .menu-wrap {
     display: none; } }
 @media (min-width: 600px) and (max-width: 840px) {
   body {
