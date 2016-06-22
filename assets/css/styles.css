@@ -107,32 +107,26 @@
       border-radius: 2%;
       font-family: "Open Sans", "Arial", sans-serif; }
       #projects .project-card .img-wrap {
-        border: solid 1px red;
         height: 52%; }
       #projects .project-card .title-desc {
         display: inline-block;
-        border: solid 1px blue;
         width: 90%;
         margin: 5% 0 0 0; }
         #projects .project-card .title-desc .project-title {
           padding: 2px;
           font-family: "Montserrat", sans-serif;
           font-size: 1.2em;
-          border: solid 1px gray;
           height: 10%; }
         #projects .project-card .title-desc .project-desc {
           font-size: 0.8em;
           font-weight: 300;
-          border: solid 1px purple;
           height: 10%; }
         #projects .project-card .title-desc .tech-desc {
           font-size: 0.8em;
           font-weight: 300;
-          border: solid 1px red;
           height: 8%; }
       #projects .project-card .button-wrap {
-        display: block;
-        border: solid 1px red; }
+        display: block; }
         #projects .project-card .button-wrap a {
           text-decoration: none;
           background-color: #14d7f5;
@@ -158,8 +152,7 @@
         width: 60%;
         margin: 0 20%;
         display: block;
-        border: solid 1px #ededed;
-        border: solid 1px red; }
+        border: solid 1px #ededed; }
 
   #about {
     margin: 0 0 5% 0; }
@@ -282,8 +275,6 @@
       padding: 5% 0;
       border-radius: 2%;
       font-family: "Open Sans", "Arial", sans-serif; }
-      #projects .project-card .img-wrap {
-        border: solid 1px red; }
       #projects .project-card .title-desc {
         display: inline-block;
         width: 80%;
@@ -343,7 +334,6 @@
     font-size: 1.3em;
     width: 40%;
     margin: 2%;
-    border: solid 2px gray;
     text-align: left;
     vertical-align: middle; }
 
@@ -351,7 +341,6 @@
     display: inline-block;
     vertical-align: middle;
     margin: 2% 0 0 15%;
-    border: solid 2px gray;
     width: 30%; }
     #large-portrait img {
       width: 100%; }

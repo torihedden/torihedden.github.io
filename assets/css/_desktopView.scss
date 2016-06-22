@@ -126,7 +126,7 @@
     }
     .project-card {
       .img-wrap {
-        border: solid 1px red;
+        // border: solid 1px red;
         height: 52%;
       }
       width: 90%;
@@ -143,34 +143,34 @@
       font-family: $font;
       .title-desc {
         display: inline-block;
-        border: solid 1px blue;
+        // border: solid 1px blue;
         width: 90%;
         margin: 5% 0 0 0;
         .project-title {
           padding: 2px;
           font-family: $header-font;
           font-size: 1.2em;
-          border: solid 1px gray;
+          // border: solid 1px gray;
           height: 10%;
         }
         .project-desc {
           font-size: 0.8em;
           font-weight: 300;
           // margin-top: 40px;
-          border: solid 1px purple;
+          // border: solid 1px purple;
           height: 10%;
         }
         .tech-desc {
           font-size: 0.8em;
           font-weight: 300;
-          border: solid 1px red;
+          // border: solid 1px red;
           height: 8%;
         }
       }
       .button-wrap {
         display: block;
         // margin-top: 5%;
-        border: solid 1px red;
+        // border: solid 1px red;
         a {
           text-decoration: none;
           background-color: $accent-blue;
@@ -204,7 +204,6 @@
         margin: 0 20%;
         display: block;
         border: solid 1px lighten(lightgray, 10%);
-        border: solid 1px red;
       }
     }
   }
