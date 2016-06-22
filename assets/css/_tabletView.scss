@@ -81,6 +81,7 @@
     .project-card {
       .img-wrap {
         // border: solid 1px red;
+        height: 45%;
       }
       width: 90%;
       margin: 5%;
@@ -103,18 +104,21 @@
           padding: 2px;
           font-family: $header-font;
           font-size: 1.2em;
+          height: 10%;
           // border: solid 1px gray;
         }
         .project-desc {
           font-size: 0.8em;
           font-weight: 300;
-          margin-top: 40px;
+          margin-top: 10px;
+          height: 10%;
           // border: solid 1px purple;
         }
         .tech-desc {
           margin: 25px 0 0 0;
           font-size: 0.8em;
           font-weight: 300;
+          height: 10%;
           // border: solid 1px red;
         }
       }
