@@ -26,6 +26,7 @@
     padding: 20px; }
     #header #contact-section {
       display: inline-block;
+      float: right;
       position: relative;
       height: 5%; }
       #header #contact-section a {
