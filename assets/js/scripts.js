@@ -21,18 +21,21 @@ $(document).ready(function(){
   });
 
   $(".about-button2").click(function(){
-
+    //basically, if in desktop media query, execute if. else is for tablet and phone
     if ($("#contact").css('display') !== 'none'){
       $('html, body').animate({
         scrollTop: $("#contact").offset().top},
         'slow');
     } else {
       $('html, body').animate({
-        scrollTop: $(document).height()},
-        'slow');
-      setInterval(function() { $(".menu-wrap").show() }, 600);
-    }
-//try changing .show() on line 33 to toggle... why is the menu toggling after line 23 event listener fires?
+        scrollTop: $(document).height()
+      },'slow');
+      // setInterval(function() {
+        $(".menu-wrap").show();
+        $(".fa-comment-o").hide();
+        $(".fa-times").show();
+      // }, 600);
+    }//ok this fixes the issue but it doesn't look as good... try and re-work in a pause before the contact menu flies out that doesn't cause it to re-open and close
   });
 
 });
