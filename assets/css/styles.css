@@ -52,7 +52,7 @@
 
   .about-button-wrap {
     display: inline-block;
-    margin: 5%;
+    margin: 5% 5% 5% 0;
     width: 90%; }
     .about-button-wrap .about-button {
       font-family: "Open Sans", "Arial", sans-serif;
@@ -356,7 +356,7 @@
 
   .about-button-wrap {
     display: inline-block;
-    margin: 5%;
+    margin: 5% 5% 5% 0;
     width: 90%; }
     .about-button-wrap .about-button {
       font-family: "Open Sans", "Arial", sans-serif;
