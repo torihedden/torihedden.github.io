@@ -86,6 +86,30 @@
         background-color: white;
         color: #067384;
         border: solid 2px #067384; }
+    .about-button-wrap .about-button3 {
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 1em;
+      text-decoration: none;
+      background-color: #063141;
+      border-radius: 35px;
+      padding: 1% 5%;
+      color: white;
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: 300;
+      border: solid 2px transparent; }
+      .about-button-wrap .about-button3 a {
+        color: white;
+        text-decoration: none; }
+        .about-button-wrap .about-button3 a:visited {
+          color: white;
+          text-decoration: none; }
+        .about-button-wrap .about-button3 a:hover {
+          color: #063141; }
+      .about-button-wrap .about-button3:hover {
+        background-color: white;
+        color: #063141;
+        border: solid 2px #063141; }
 
   #projects {
     margin: 10% 5%;
@@ -390,6 +414,30 @@
         background-color: white;
         color: #067384;
         border: solid 2px #067384; }
+    .about-button-wrap .about-button3 {
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 1em;
+      text-decoration: none;
+      background-color: #063141;
+      border-radius: 35px;
+      padding: 1% 5%;
+      color: white;
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: 300;
+      border: solid 2px transparent; }
+      .about-button-wrap .about-button3 a {
+        color: white;
+        text-decoration: none; }
+        .about-button-wrap .about-button3 a:visited {
+          color: white;
+          text-decoration: none; }
+        .about-button-wrap .about-button3 a:hover {
+          color: #063141; }
+      .about-button-wrap .about-button3:hover {
+        background-color: white;
+        color: #063141;
+        border: solid 2px #063141; }
 
   .float-icon {
     padding: 12px 10px;
