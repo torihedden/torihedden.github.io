@@ -52,8 +52,8 @@
 
   .about-button-wrap {
     display: inline-block;
-    margin: 5% 5% 5% 0;
-    width: 90%; }
+    margin: 5% 40% 5% 0;
+    width: 60%; }
     .about-button-wrap .about-button {
       font-family: "Open Sans", "Arial", sans-serif;
       font-size: 1em;
@@ -355,7 +355,7 @@
         border: solid 1px lightgray; }
 
   #about {
-    margin: 0 0 5% 0; }
+    margin: 5% 0 5% 0; }
 
   #contact {
     display: none; }
@@ -380,8 +380,8 @@
 
   .about-button-wrap {
     display: inline-block;
-    margin: 5% 5% 5% 0;
-    width: 90%; }
+    margin: 5% 30% 5% 0;
+    width: 70%; }
     .about-button-wrap .about-button {
       font-family: "Open Sans", "Arial", sans-serif;
       font-size: 1em;
@@ -570,11 +570,11 @@
         border: solid 1px lightgray; }
 
   #about {
-    margin: 0 0 5% 0; }
+    margin: 5% 0 5% 0; }
     #about .about-button-wrap {
       display: inline-block;
-      margin: 5%;
-      width: 90%; }
+      margin: 5% 25%;
+      width: 50%; }
       #about .about-button-wrap .about-button {
         font-family: "Open Sans", "Arial", sans-serif;
         font-size: 1em;
@@ -607,6 +607,30 @@
           background-color: white;
           color: #067384;
           border: solid 2px #067384; }
+      #about .about-button-wrap .about-button3 {
+        font-family: "Open Sans", "Arial", sans-serif;
+        font-size: 1em;
+        text-decoration: none;
+        background-color: #063141;
+        border-radius: 35px;
+        padding: 1% 5%;
+        color: white;
+        display: inline-block;
+        margin-top: 20px;
+        font-weight: 300;
+        border: solid 2px transparent; }
+        #about .about-button-wrap .about-button3 a {
+          color: white;
+          text-decoration: none; }
+          #about .about-button-wrap .about-button3 a:visited {
+            color: white;
+            text-decoration: none; }
+          #about .about-button-wrap .about-button3 a:hover {
+            color: #063141; }
+        #about .about-button-wrap .about-button3:hover {
+          background-color: white;
+          color: #063141;
+          border: solid 2px #063141; }
 
   #contact {
     display: none; }
