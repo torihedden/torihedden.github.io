@@ -23,7 +23,8 @@
   #header {
     color: white;
     background-color: #063141;
-    padding: 20px; }
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
     #header #contact-section {
       display: inline-block;
       float: right;
@@ -115,6 +116,10 @@
     margin: 10% 5%;
     box-sizing: border-box;
     width: 90%; }
+    #projects #project-subtitle {
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 3em;
+      margin: 0 0 0 2%; }
     #projects .card-wrap {
       width: 33.33333%;
       display: inline-block;
@@ -259,7 +264,8 @@
   #header {
     color: white;
     background-color: #063141;
-    padding: 20px; }
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
     #header #contact-section {
       display: none; }
       #header #contact-section a {
@@ -509,7 +515,8 @@
     color: white;
     background-color: #063141;
     padding: 20px;
-    font-size: 0.8em; }
+    font-size: 0.8em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
     #header #contact-section {
       display: none; }
       #header #contact-section a {
