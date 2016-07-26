@@ -9,7 +9,8 @@ $header-font: "Montserrat", sans-serif;
 
 
 //media queries
-@import "desktopView";
-@import "tabletView";
-@import "phoneView";
 @import "smallPhoneView";
+@import "phoneView";
+@import "tabletView";
+@import "desktopView";
+@import "desktopHDView";

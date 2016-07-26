@@ -34,6 +34,7 @@
     color: white;
     background-color: $navy2;
     padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     #contact-section {
       display: inline-block;
       float: right;
@@ -146,6 +147,11 @@
     box-sizing: border-box;
     width: 90%;
     // border: solid 1px red;
+    #project-subtitle {
+      font-family: $font;
+      font-size: 3em;
+      margin: 0 0 0 2%;
+    }
     .card-wrap {
       width: (100% / 3);
       // padding: 2%;

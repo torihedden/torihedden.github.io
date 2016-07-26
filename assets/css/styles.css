@@ -1,7 +1,8 @@
-@media (min-width: 841px) {
+@media (max-width: 475px) {
   body {
     font-size: 1em;
-    line-height: 1.2; }
+    line-height: 1.2;
+    font-family: "Open Sans", "Arial", sans-serif; }
 
   #name-wrap {
     display: inline-block; }
@@ -24,17 +25,14 @@
     color: white;
     background-color: #063141;
     padding: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    font-size: 0.8em; }
     #header #contact-section {
-      display: inline-block;
-      float: right;
-      position: relative;
-      height: 5%; }
+      display: none; }
       #header #contact-section a {
         color: white;
         margin: 0 10px; }
       #header #contact-section i:hover {
-        color: #09b3cd; }
+        color: #4099FF; }
 
   #left-bar {
     position: absolute;
@@ -51,112 +49,198 @@
       color: black;
       text-decoration: none; }
 
-  .about-button-wrap {
-    display: inline-block;
-    margin: 5% 40% 5% 0;
-    width: 60%; }
-    .about-button-wrap .about-button {
-      font-family: "Open Sans", "Arial", sans-serif;
-      font-size: 1em;
-      text-decoration: none;
-      background-color: #14d7f5;
-      border-radius: 35px;
-      padding: 1% 5%;
-      color: white;
-      display: inline-block;
-      margin-top: 20px;
-      font-weight: 300;
-      border: solid 2px transparent; }
-      .about-button-wrap .about-button:hover {
-        background-color: white;
-        color: #14d7f5;
-        border: solid 2px #14d7f5; }
-    .about-button-wrap .about-button2 {
-      font-family: "Open Sans", "Arial", sans-serif;
-      font-size: 1em;
-      text-decoration: none;
-      background-color: #067384;
-      border-radius: 35px;
-      padding: 1% 5%;
-      color: white;
-      display: inline-block;
-      margin-top: 20px;
-      font-weight: 300;
-      border: solid 2px transparent; }
-      .about-button-wrap .about-button2:hover {
-        background-color: white;
-        color: #067384;
-        border: solid 2px #067384; }
-    .about-button-wrap .about-button3 {
-      font-family: "Open Sans", "Arial", sans-serif;
-      font-size: 1em;
-      text-decoration: none;
-      background-color: #063141;
-      border-radius: 35px;
-      padding: 1% 5%;
-      color: white;
-      display: inline-block;
-      margin-top: 20px;
-      font-weight: 300;
-      border: solid 2px transparent; }
-      .about-button-wrap .about-button3 a {
-        color: white;
-        text-decoration: none; }
-        .about-button-wrap .about-button3 a:visited {
-          color: white;
-          text-decoration: none; }
-        .about-button-wrap .about-button3 a:hover {
-          color: #063141; }
-      .about-button-wrap .about-button3:hover {
-        background-color: white;
-        color: #063141;
-        border: solid 2px #063141; }
-
   #projects {
-    margin: 10% 5%;
+    margin: 10% 5% 20% 5%;
     box-sizing: border-box;
     width: 90%; }
-    #projects #project-subtitle {
-      font-family: "Open Sans", "Arial", sans-serif;
-      font-size: 3em;
-      margin: 0 0 0 2%; }
-    #projects .card-wrap {
-      width: 33.33333%;
-      display: inline-block;
-      box-sizing: border-box; }
     #projects .project-card {
-      width: 90%;
-      margin: 5%;
-      border: solid 1px lightgray;
+      border: solid 1px #ececec;
+      width: 100%;
       box-sizing: border-box;
       display: inline-block;
+      margin: 5% 0;
       color: black;
       text-align: center;
       font-size: 1.5em;
       padding: 5% 0;
-      border-radius: 2%;
-      font-family: "Open Sans", "Arial", sans-serif; }
-      #projects .project-card .img-wrap {
-        height: 52%; }
+      border-radius: 2%; }
       #projects .project-card .title-desc {
-        display: inline-block;
+        display: block;
         width: 90%;
-        margin: 5% 0 0 0; }
+        margin: 0 5%; }
         #projects .project-card .title-desc .project-title {
           padding: 2px;
           font-family: "Montserrat", sans-serif;
-          font-size: 1.2em;
-          height: 10%; }
+          font-size: 1.2em; }
         #projects .project-card .title-desc .project-desc {
           font-size: 0.8em;
           font-weight: 300;
-          height: 10%; }
+          margin-top: 40px; }
         #projects .project-card .title-desc .tech-desc {
+          margin: 25px 0 0 0;
+          font-size: 0.8em;
+          font-weight: 300; }
+      #projects .project-card .button-wrap {
+        display: block;
+        margin-top: 5%; }
+        #projects .project-card .button-wrap a {
+          text-decoration: none;
+          background-color: #14d7f5;
+          border-radius: 35px;
+          padding: 2% 5%;
+          color: white;
+          display: inline-block;
+          margin-top: 20px;
+          font-weight: 300;
+          font-size: 0.9em; }
+        #projects .project-card .button-wrap .GH-button {
+          background-color: #067384; }
+      #projects .project-card img {
+        width: 50%;
+        margin: 0 25% 5% 25%;
+        display: block;
+        border: solid 1px lightgray; }
+
+  #about {
+    margin: 0 0 5% 0; }
+
+  #contact {
+    display: none; }
+
+  #about-me {
+    margin-top: 3%; }
+
+  #bio {
+    display: inline-block;
+    font-family: "Open Sans", "Arial", sans-serif;
+    line-height: 1.5;
+    font-size: 1.3em;
+    width: 80%;
+    margin: 2% 10%;
+    text-align: center;
+    vertical-align: middle; }
+
+  #large-portrait {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2% 30% 0 30%;
+    width: 40%; }
+    #large-portrait img {
+      width: 100%; }
+
+  .float-icon {
+    padding: 12px 10px;
+    border-radius: 100%;
+    display: inline;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9;
+    background-color: #063141;
+    color: white; }
+    .float-icon .icon-wrap {
+      width: 40px;
+      text-align: center;
+      font-size: 0.8em; }
+
+  .menu-wrap {
+    display: none; }
+    .menu-wrap .menu {
+      background-color: #063141;
+      color: white;
+      position: fixed;
+      bottom: 20px;
+      right: 92px;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 1.5em; }
+    .menu-wrap div {
+      display: inline;
+      margin-right: 18px; }
+    .menu-wrap .caret {
+      position: fixed;
+      bottom: 35px;
+      right: 75px;
+      width: 0;
+      height: 0;
+      border-top: 18px solid transparent;
+      border-bottom: 18px solid transparent;
+      border-left: 18px solid #063141;
+      z-index: 3; }
+    .menu-wrap a {
+      color: white;
+      text-decoration: none; } }
+@media (max-width: 599px) {
+  body {
+    font-size: 1em;
+    line-height: 1.2;
+    font-family: "Open Sans", "Arial", sans-serif; }
+
+  #name-wrap {
+    display: inline-block; }
+
+  #my-name {
+    text-transform: uppercase;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 3em;
+    display: block; }
+
+  #name-subtitle {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 1.5em;
+    text-align: right;
+    display: inline-block;
+    margin-left: 8px; }
+
+  #header {
+    color: white;
+    background-color: #063141;
+    padding: 20px;
+    font-size: 0.8em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    #header #contact-section {
+      display: none; }
+      #header #contact-section a {
+        color: white;
+        margin: 0 10px; }
+      #header #contact-section i:hover {
+        color: #4099FF; }
+
+  #projects {
+    margin: 10% 5% 20% 5%;
+    box-sizing: border-box;
+    width: 90%; }
+    #projects .project-card {
+      border: solid 1px #ececec;
+      width: 100%;
+      box-sizing: border-box;
+      display: inline-block;
+      margin: 5% 0;
+      color: black;
+      text-align: center;
+      font-size: 1.5em;
+      padding: 5% 0;
+      border-radius: 2%; }
+      #projects .project-card .title-desc {
+        display: inline-block;
+        width: 55%; }
+        #projects .project-card .title-desc .project-title {
+          padding: 2px;
+          font-family: "Montserrat", sans-serif;
+          font-size: 1.2em; }
+        #projects .project-card .title-desc .project-desc {
           font-size: 0.8em;
           font-weight: 300;
-          height: 8%; }
+          margin-top: 40px; }
+        #projects .project-card .title-desc .tech-desc {
+          margin: 25px 0 0 0;
+          font-size: 0.8em;
+          font-weight: 300; }
       #projects .project-card .button-wrap {
-        display: block; }
+        display: block;
+        margin-top: 5%; }
         #projects .project-card .button-wrap a {
           text-decoration: none;
           background-color: #14d7f5;
@@ -166,78 +250,142 @@
           display: inline-block;
           margin-top: 20px;
           font-weight: 300;
-          font-size: 0.9em;
-          border: solid 2px transparent; }
-          #projects .project-card .button-wrap a:hover {
-            background-color: white;
-            color: #14d7f5;
-            border: solid 2px #14d7f5; }
+          font-size: 0.9em; }
         #projects .project-card .button-wrap .GH-button {
           background-color: #067384; }
-          #projects .project-card .button-wrap .GH-button:hover {
-            background-color: white;
-            color: #067384;
-            border: solid 2px #067384; }
       #projects .project-card img {
-        width: 60%;
-        margin: 0 20%;
-        display: block;
-        border: solid 1px #ededed; }
+        width: 30%;
+        margin: 0 5% 0 0;
+        display: inline-block;
+        border: solid 1px lightgray; }
 
   #about {
-    margin: 0 0 5% 0; }
+    margin: 5% 0 5% 0; }
+    #about .about-button-wrap {
+      display: inline-block;
+      margin: 5% 23.75%;
+      width: 52.5%; }
+      #about .about-button-wrap .about-button {
+        font-family: "Open Sans", "Arial", sans-serif;
+        font-size: 1em;
+        text-decoration: none;
+        background-color: #14d7f5;
+        border-radius: 35px;
+        padding: 1% 5%;
+        color: white;
+        display: inline-block;
+        margin-top: 20px;
+        font-weight: 300;
+        border: solid 2px transparent; }
+        #about .about-button-wrap .about-button:hover {
+          background-color: white;
+          color: #14d7f5;
+          border: solid 2px #14d7f5; }
+      #about .about-button-wrap .about-button2 {
+        font-family: "Open Sans", "Arial", sans-serif;
+        font-size: 1em;
+        text-decoration: none;
+        background-color: #067384;
+        border-radius: 35px;
+        padding: 1% 5%;
+        color: white;
+        display: inline-block;
+        margin-top: 20px;
+        font-weight: 300;
+        border: solid 2px transparent; }
+        #about .about-button-wrap .about-button2:hover {
+          background-color: white;
+          color: #067384;
+          border: solid 2px #067384; }
+      #about .about-button-wrap .about-button3 {
+        font-family: "Open Sans", "Arial", sans-serif;
+        font-size: 1em;
+        text-decoration: none;
+        background-color: #063141;
+        border-radius: 35px;
+        padding: 1% 5%;
+        color: white;
+        display: inline-block;
+        margin-top: 20px;
+        font-weight: 300;
+        border: solid 2px transparent; }
+        #about .about-button-wrap .about-button3 a {
+          color: white;
+          text-decoration: none; }
+          #about .about-button-wrap .about-button3 a:visited {
+            color: white;
+            text-decoration: none; }
+          #about .about-button-wrap .about-button3 a:hover {
+            color: #063141; }
+        #about .about-button-wrap .about-button3:hover {
+          background-color: white;
+          color: #063141;
+          border: solid 2px #063141; }
 
   #contact {
-    height: 300px;
-    background-color: #063141;
-    font-family: "Open Sans", "Arial", sans-serif;
-    padding: 5% 0 0 0; }
-    #contact #contact-wrap {
-      text-align: center;
-      vertical-align: middle;
-      width: 70%;
-      margin: 0 15%; }
-      #contact #contact-wrap div {
-        padding: 2%;
-        font-size: 1em;
-        color: white;
-        display: inline-block; }
-        #contact #contact-wrap div a {
-          text-decoration: none;
-          color: white; }
-        #contact #contact-wrap div a:hover {
-          text-decoration: underline; }
-      #contact #contact-wrap span {
-        color: gray; }
-      #contact #contact-wrap #copyright {
-        margin-top: 2%;
-        font-size: 0.8em;
-        display: block; }
-
-  #about-me {
-    margin-top: 3%; }
+    display: none; }
 
   #bio {
     display: inline-block;
     font-family: "Open Sans", "Arial", sans-serif;
     line-height: 1.5;
-    font-size: 1.5em;
-    width: 35%;
-    margin-left: 2%;
-    margin-right: 5%;
-    text-align: left;
+    font-size: 1.3em;
+    width: 80%;
+    margin: 2% 10%;
+    text-align: center;
     vertical-align: middle; }
 
   #large-portrait {
     display: inline-block;
     vertical-align: middle;
-    margin: 2% 0 0 15%; }
+    margin: 2% 30% 0 30%;
+    width: 40%; }
+    #large-portrait img {
+      width: 100%; }
 
   .float-icon {
-    display: none; }
+    padding: 12px 10px;
+    border-radius: 100%;
+    display: inline;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9;
+    background-color: #063141;
+    color: white; }
+    .float-icon .icon-wrap {
+      width: 40px;
+      text-align: center;
+      font-size: 0.8em; }
 
   .menu-wrap {
-    display: none; } }
+    display: none; }
+    .menu-wrap .menu {
+      background-color: #063141;
+      color: white;
+      position: fixed;
+      bottom: 20px;
+      right: 92px;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 1.5em; }
+      .menu-wrap .menu div {
+        display: inline;
+        margin-right: 8px; }
+    .menu-wrap .caret {
+      position: fixed;
+      bottom: 35px;
+      right: 75px;
+      width: 0;
+      height: 0;
+      border-top: 18px solid transparent;
+      border-bottom: 18px solid transparent;
+      border-left: 18px solid #063141;
+      z-index: 3; }
+    .menu-wrap a {
+      color: white;
+      text-decoration: none; } }
 @media (min-width: 600px) and (max-width: 840px) {
   body {
     box-sizing: border-box;
@@ -488,11 +636,10 @@
     .menu-wrap a {
       color: white;
       text-decoration: none; } }
-@media (max-width: 599px) {
+@media (min-width: 841px) {
   body {
     font-size: 1em;
-    line-height: 1.2;
-    font-family: "Open Sans", "Arial", sans-serif; }
+    line-height: 1.2; }
 
   #name-wrap {
     display: inline-block; }
@@ -515,229 +662,17 @@
     color: white;
     background-color: #063141;
     padding: 20px;
-    font-size: 0.8em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
     #header #contact-section {
-      display: none; }
+      display: inline-block;
+      float: right;
+      position: relative;
+      height: 5%; }
       #header #contact-section a {
         color: white;
         margin: 0 10px; }
       #header #contact-section i:hover {
-        color: #4099FF; }
-
-  #projects {
-    margin: 10% 5% 20% 5%;
-    box-sizing: border-box;
-    width: 90%; }
-    #projects .project-card {
-      border: solid 1px #ececec;
-      width: 100%;
-      box-sizing: border-box;
-      display: inline-block;
-      margin: 5% 0;
-      color: black;
-      text-align: center;
-      font-size: 1.5em;
-      padding: 5% 0;
-      border-radius: 2%; }
-      #projects .project-card .title-desc {
-        display: inline-block;
-        width: 55%; }
-        #projects .project-card .title-desc .project-title {
-          padding: 2px;
-          font-family: "Montserrat", sans-serif;
-          font-size: 1.2em; }
-        #projects .project-card .title-desc .project-desc {
-          font-size: 0.8em;
-          font-weight: 300;
-          margin-top: 40px; }
-        #projects .project-card .title-desc .tech-desc {
-          margin: 25px 0 0 0;
-          font-size: 0.8em;
-          font-weight: 300; }
-      #projects .project-card .button-wrap {
-        display: block;
-        margin-top: 5%; }
-        #projects .project-card .button-wrap a {
-          text-decoration: none;
-          background-color: #14d7f5;
-          border-radius: 35px;
-          padding: 2% 8%;
-          color: white;
-          display: inline-block;
-          margin-top: 20px;
-          font-weight: 300;
-          font-size: 0.9em; }
-        #projects .project-card .button-wrap .GH-button {
-          background-color: #067384; }
-      #projects .project-card img {
-        width: 30%;
-        margin: 0 5% 0 0;
-        display: inline-block;
-        border: solid 1px lightgray; }
-
-  #about {
-    margin: 5% 0 5% 0; }
-    #about .about-button-wrap {
-      display: inline-block;
-      margin: 5% 23.75%;
-      width: 52.5%; }
-      #about .about-button-wrap .about-button {
-        font-family: "Open Sans", "Arial", sans-serif;
-        font-size: 1em;
-        text-decoration: none;
-        background-color: #14d7f5;
-        border-radius: 35px;
-        padding: 1% 5%;
-        color: white;
-        display: inline-block;
-        margin-top: 20px;
-        font-weight: 300;
-        border: solid 2px transparent; }
-        #about .about-button-wrap .about-button:hover {
-          background-color: white;
-          color: #14d7f5;
-          border: solid 2px #14d7f5; }
-      #about .about-button-wrap .about-button2 {
-        font-family: "Open Sans", "Arial", sans-serif;
-        font-size: 1em;
-        text-decoration: none;
-        background-color: #067384;
-        border-radius: 35px;
-        padding: 1% 5%;
-        color: white;
-        display: inline-block;
-        margin-top: 20px;
-        font-weight: 300;
-        border: solid 2px transparent; }
-        #about .about-button-wrap .about-button2:hover {
-          background-color: white;
-          color: #067384;
-          border: solid 2px #067384; }
-      #about .about-button-wrap .about-button3 {
-        font-family: "Open Sans", "Arial", sans-serif;
-        font-size: 1em;
-        text-decoration: none;
-        background-color: #063141;
-        border-radius: 35px;
-        padding: 1% 5%;
-        color: white;
-        display: inline-block;
-        margin-top: 20px;
-        font-weight: 300;
-        border: solid 2px transparent; }
-        #about .about-button-wrap .about-button3 a {
-          color: white;
-          text-decoration: none; }
-          #about .about-button-wrap .about-button3 a:visited {
-            color: white;
-            text-decoration: none; }
-          #about .about-button-wrap .about-button3 a:hover {
-            color: #063141; }
-        #about .about-button-wrap .about-button3:hover {
-          background-color: white;
-          color: #063141;
-          border: solid 2px #063141; }
-
-  #contact {
-    display: none; }
-
-  #bio {
-    display: inline-block;
-    font-family: "Open Sans", "Arial", sans-serif;
-    line-height: 1.5;
-    font-size: 1.3em;
-    width: 80%;
-    margin: 2% 10%;
-    text-align: center;
-    vertical-align: middle; }
-
-  #large-portrait {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 2% 30% 0 30%;
-    width: 40%; }
-    #large-portrait img {
-      width: 100%; }
-
-  .float-icon {
-    padding: 12px 10px;
-    border-radius: 100%;
-    display: inline;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9;
-    background-color: #063141;
-    color: white; }
-    .float-icon .icon-wrap {
-      width: 40px;
-      text-align: center;
-      font-size: 0.8em; }
-
-  .menu-wrap {
-    display: none; }
-    .menu-wrap .menu {
-      background-color: #063141;
-      color: white;
-      position: fixed;
-      bottom: 20px;
-      right: 92px;
-      padding: 10px;
-      text-align: center;
-      border-radius: 10px;
-      font-size: 1.5em; }
-      .menu-wrap .menu div {
-        display: inline;
-        margin-right: 8px; }
-    .menu-wrap .caret {
-      position: fixed;
-      bottom: 35px;
-      right: 75px;
-      width: 0;
-      height: 0;
-      border-top: 18px solid transparent;
-      border-bottom: 18px solid transparent;
-      border-left: 18px solid #063141;
-      z-index: 3; }
-    .menu-wrap a {
-      color: white;
-      text-decoration: none; } }
-@media (max-width: 475px) {
-  body {
-    font-size: 1em;
-    line-height: 1.2;
-    font-family: "Open Sans", "Arial", sans-serif; }
-
-  #name-wrap {
-    display: inline-block; }
-
-  #my-name {
-    text-transform: uppercase;
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-weight: 300;
-    font-size: 3em;
-    display: block; }
-
-  #name-subtitle {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-size: 1.5em;
-    text-align: right;
-    display: inline-block;
-    margin-left: 8px; }
-
-  #header {
-    color: white;
-    background-color: #063141;
-    padding: 20px;
-    font-size: 0.8em; }
-    #header #contact-section {
-      display: none; }
-      #header #contact-section a {
-        color: white;
-        margin: 0 10px; }
-      #header #contact-section i:hover {
-        color: #4099FF; }
+        color: #09b3cd; }
 
   #left-bar {
     position: absolute;
@@ -754,63 +689,168 @@
       color: black;
       text-decoration: none; }
 
+  .about-button-wrap {
+    display: inline-block;
+    margin: 5% 40% 5% 0;
+    width: 60%; }
+    .about-button-wrap .about-button {
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 1em;
+      text-decoration: none;
+      background-color: #14d7f5;
+      border-radius: 35px;
+      padding: 1% 5%;
+      color: white;
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: 300;
+      border: solid 2px transparent; }
+      .about-button-wrap .about-button:hover {
+        background-color: white;
+        color: #14d7f5;
+        border: solid 2px #14d7f5; }
+    .about-button-wrap .about-button2 {
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 1em;
+      text-decoration: none;
+      background-color: #067384;
+      border-radius: 35px;
+      padding: 1% 5%;
+      color: white;
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: 300;
+      border: solid 2px transparent; }
+      .about-button-wrap .about-button2:hover {
+        background-color: white;
+        color: #067384;
+        border: solid 2px #067384; }
+    .about-button-wrap .about-button3 {
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 1em;
+      text-decoration: none;
+      background-color: #063141;
+      border-radius: 35px;
+      padding: 1% 5%;
+      color: white;
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: 300;
+      border: solid 2px transparent; }
+      .about-button-wrap .about-button3 a {
+        color: white;
+        text-decoration: none; }
+        .about-button-wrap .about-button3 a:visited {
+          color: white;
+          text-decoration: none; }
+        .about-button-wrap .about-button3 a:hover {
+          color: #063141; }
+      .about-button-wrap .about-button3:hover {
+        background-color: white;
+        color: #063141;
+        border: solid 2px #063141; }
+
   #projects {
-    margin: 10% 5% 20% 5%;
+    margin: 10% 5%;
     box-sizing: border-box;
     width: 90%; }
+    #projects #project-subtitle {
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 3em;
+      margin: 0 0 0 2%; }
+    #projects .card-wrap {
+      width: 33.33333%;
+      display: inline-block;
+      box-sizing: border-box; }
     #projects .project-card {
-      border: solid 1px #ececec;
-      width: 100%;
+      width: 90%;
+      margin: 5%;
+      border: solid 1px lightgray;
       box-sizing: border-box;
       display: inline-block;
-      margin: 5% 0;
       color: black;
       text-align: center;
       font-size: 1.5em;
       padding: 5% 0;
-      border-radius: 2%; }
+      border-radius: 2%;
+      font-family: "Open Sans", "Arial", sans-serif; }
+      #projects .project-card .img-wrap {
+        height: 52%; }
       #projects .project-card .title-desc {
-        display: block;
+        display: inline-block;
         width: 90%;
-        margin: 0 5%; }
+        margin: 5% 0 0 0; }
         #projects .project-card .title-desc .project-title {
           padding: 2px;
           font-family: "Montserrat", sans-serif;
-          font-size: 1.2em; }
+          font-size: 1.2em;
+          height: 10%; }
         #projects .project-card .title-desc .project-desc {
           font-size: 0.8em;
           font-weight: 300;
-          margin-top: 40px; }
+          height: 10%; }
         #projects .project-card .title-desc .tech-desc {
-          margin: 25px 0 0 0;
           font-size: 0.8em;
-          font-weight: 300; }
+          font-weight: 300;
+          height: 8%; }
       #projects .project-card .button-wrap {
-        display: block;
-        margin-top: 5%; }
+        display: block; }
         #projects .project-card .button-wrap a {
           text-decoration: none;
           background-color: #14d7f5;
           border-radius: 35px;
-          padding: 2% 5%;
+          padding: 2% 8%;
           color: white;
           display: inline-block;
           margin-top: 20px;
           font-weight: 300;
-          font-size: 0.9em; }
+          font-size: 0.9em;
+          border: solid 2px transparent; }
+          #projects .project-card .button-wrap a:hover {
+            background-color: white;
+            color: #14d7f5;
+            border: solid 2px #14d7f5; }
         #projects .project-card .button-wrap .GH-button {
           background-color: #067384; }
+          #projects .project-card .button-wrap .GH-button:hover {
+            background-color: white;
+            color: #067384;
+            border: solid 2px #067384; }
       #projects .project-card img {
-        width: 50%;
-        margin: 0 25% 5% 25%;
+        width: 60%;
+        margin: 0 20%;
         display: block;
-        border: solid 1px lightgray; }
+        border: solid 1px #ededed; }
 
   #about {
     margin: 0 0 5% 0; }
 
   #contact {
-    display: none; }
+    height: 300px;
+    background-color: #063141;
+    font-family: "Open Sans", "Arial", sans-serif;
+    padding: 5% 0 0 0; }
+    #contact #contact-wrap {
+      text-align: center;
+      vertical-align: middle;
+      width: 70%;
+      margin: 0 15%; }
+      #contact #contact-wrap div {
+        padding: 2%;
+        font-size: 1em;
+        color: white;
+        display: inline-block; }
+        #contact #contact-wrap div a {
+          text-decoration: none;
+          color: white; }
+        #contact #contact-wrap div a:hover {
+          text-decoration: underline; }
+      #contact #contact-wrap span {
+        color: gray; }
+      #contact #contact-wrap #copyright {
+        margin-top: 2%;
+        font-size: 0.8em;
+        display: block; }
 
   #about-me {
     margin-top: 3%; }
@@ -819,62 +859,262 @@
     display: inline-block;
     font-family: "Open Sans", "Arial", sans-serif;
     line-height: 1.5;
-    font-size: 1.3em;
-    width: 80%;
-    margin: 2% 10%;
-    text-align: center;
+    font-size: 1.5em;
+    width: 35%;
+    margin-left: 2%;
+    margin-right: 5%;
+    text-align: left;
     vertical-align: middle; }
 
   #large-portrait {
     display: inline-block;
     vertical-align: middle;
-    margin: 2% 30% 0 30%;
-    width: 40%; }
-    #large-portrait img {
-      width: 100%; }
+    margin: 2% 0 0 15%; }
 
   .float-icon {
-    padding: 12px 10px;
-    border-radius: 100%;
-    display: inline;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9;
-    background-color: #063141;
-    color: white; }
-    .float-icon .icon-wrap {
-      width: 40px;
-      text-align: center;
-      font-size: 0.8em; }
+    display: none; }
 
   .menu-wrap {
-    display: none; }
-    .menu-wrap .menu {
+    display: none; } }
+@media (min-width: 1300px) {
+  body {
+    font-size: 1em;
+    line-height: 1.2; }
+
+  #name-wrap {
+    display: inline-block; }
+
+  #my-name {
+    text-transform: uppercase;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 3em;
+    display: block; }
+
+  #name-subtitle {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 1.5em;
+    text-align: right;
+    display: inline-block;
+    margin-left: 8px; }
+
+  #header {
+    color: white;
+    background-color: #063141;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    #header #contact-section {
+      display: inline-block;
+      float: right;
+      position: relative;
+      height: 5%; }
+      #header #contact-section a {
+        color: white;
+        margin: 0 10px; }
+      #header #contact-section i:hover {
+        color: #09b3cd; }
+
+  #left-bar {
+    position: absolute;
+    top: 100;
+    left: 40;
+    font-family: "Open Sans", "Arial", sans-serif;
+    line-height: 2;
+    font-size: 3em;
+    margin-left: 10px;
+    margin-top: 45px; }
+    #left-bar div:hover {
+      text-decoration: underline; }
+    #left-bar a {
+      color: black;
+      text-decoration: none; }
+
+  .about-button-wrap {
+    display: inline-block;
+    margin: 5% 55% 5% 0;
+    width: 45%; }
+    .about-button-wrap .about-button {
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 1em;
+      text-decoration: none;
+      background-color: #14d7f5;
+      border-radius: 35px;
+      padding: 1% 5%;
+      color: white;
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: 300;
+      border: solid 2px transparent; }
+      .about-button-wrap .about-button:hover {
+        background-color: white;
+        color: #14d7f5;
+        border: solid 2px #14d7f5; }
+    .about-button-wrap .about-button2 {
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 1em;
+      text-decoration: none;
+      background-color: #067384;
+      border-radius: 35px;
+      padding: 1% 5%;
+      color: white;
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: 300;
+      border: solid 2px transparent; }
+      .about-button-wrap .about-button2:hover {
+        background-color: white;
+        color: #067384;
+        border: solid 2px #067384; }
+    .about-button-wrap .about-button3 {
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 1em;
+      text-decoration: none;
       background-color: #063141;
+      border-radius: 35px;
+      padding: 1% 5%;
       color: white;
-      position: fixed;
-      bottom: 20px;
-      right: 92px;
-      padding: 10px;
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: 300;
+      border: solid 2px transparent; }
+      .about-button-wrap .about-button3 a {
+        color: white;
+        text-decoration: none; }
+        .about-button-wrap .about-button3 a:visited {
+          color: white;
+          text-decoration: none; }
+        .about-button-wrap .about-button3 a:hover {
+          color: #063141; }
+      .about-button-wrap .about-button3:hover {
+        background-color: white;
+        color: #063141;
+        border: solid 2px #063141; }
+
+  #projects {
+    margin: 10% 5%;
+    box-sizing: border-box;
+    width: 90%; }
+    #projects #project-subtitle {
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 3em;
+      margin: 0 0 0 2%; }
+    #projects .card-wrap {
+      width: 33.33333%;
+      display: inline-block;
+      box-sizing: border-box; }
+    #projects .project-card {
+      width: 90%;
+      margin: 5%;
+      border: solid 1px lightgray;
+      box-sizing: border-box;
+      display: inline-block;
+      color: black;
       text-align: center;
-      border-radius: 10px;
-      font-size: 1.5em; }
-    .menu-wrap div {
-      display: inline;
-      margin-right: 18px; }
-    .menu-wrap .caret {
-      position: fixed;
-      bottom: 35px;
-      right: 75px;
-      width: 0;
-      height: 0;
-      border-top: 18px solid transparent;
-      border-bottom: 18px solid transparent;
-      border-left: 18px solid #063141;
-      z-index: 3; }
-    .menu-wrap a {
-      color: white;
-      text-decoration: none; } }
+      font-size: 1.5em;
+      padding: 5% 0;
+      border-radius: 2%;
+      font-family: "Open Sans", "Arial", sans-serif; }
+      #projects .project-card .img-wrap {
+        height: 52%; }
+      #projects .project-card .title-desc {
+        display: inline-block;
+        width: 90%;
+        margin: 5% 0 0 0; }
+        #projects .project-card .title-desc .project-title {
+          padding: 10% 0 0 0;
+          font-family: "Montserrat", sans-serif;
+          font-size: 1.2em;
+          height: 10%; }
+        #projects .project-card .title-desc .project-desc {
+          font-size: 0.8em;
+          font-weight: 300;
+          height: 10%; }
+        #projects .project-card .title-desc .tech-desc {
+          font-size: 0.8em;
+          font-weight: 300;
+          height: 8%; }
+      #projects .project-card .button-wrap {
+        display: block; }
+        #projects .project-card .button-wrap a {
+          text-decoration: none;
+          background-color: #14d7f5;
+          border-radius: 35px;
+          padding: 2% 8%;
+          color: white;
+          display: inline-block;
+          margin-top: 20px;
+          font-weight: 300;
+          font-size: 0.9em;
+          border: solid 2px transparent; }
+          #projects .project-card .button-wrap a:hover {
+            background-color: white;
+            color: #14d7f5;
+            border: solid 2px #14d7f5; }
+        #projects .project-card .button-wrap .GH-button {
+          background-color: #067384; }
+          #projects .project-card .button-wrap .GH-button:hover {
+            background-color: white;
+            color: #067384;
+            border: solid 2px #067384; }
+      #projects .project-card img {
+        width: 60%;
+        margin: 0 20%;
+        display: block;
+        border: solid 1px #ededed; }
+
+  #about {
+    margin: 5% 0 2% 0; }
+
+  #contact {
+    height: 300px;
+    background-color: #063141;
+    font-family: "Open Sans", "Arial", sans-serif;
+    padding: 5% 0 0 0; }
+    #contact #contact-wrap {
+      text-align: center;
+      vertical-align: middle;
+      width: 70%;
+      margin: 0 15%; }
+      #contact #contact-wrap div {
+        padding: 2%;
+        font-size: 1em;
+        color: white;
+        display: inline-block; }
+        #contact #contact-wrap div a {
+          text-decoration: none;
+          color: white; }
+        #contact #contact-wrap div a:hover {
+          text-decoration: underline; }
+      #contact #contact-wrap span {
+        color: gray; }
+      #contact #contact-wrap #copyright {
+        margin-top: 2%;
+        font-size: 0.8em;
+        display: block; }
+
+  #about-me {
+    margin-top: 3%; }
+
+  #bio {
+    display: inline-block;
+    font-family: "Open Sans", "Arial", sans-serif;
+    line-height: 1.5;
+    font-size: 1.5em;
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+    vertical-align: middle; }
+
+  #large-portrait {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 2% 0 0 25%; }
+
+  .float-icon {
+    display: none; }
+
+  .menu-wrap {
+    display: none; } }
 
 /*# sourceMappingURL=styles.css.map */
