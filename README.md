@@ -1,3 +1,3 @@
 # My Portfolio Site
 
-View at [torihedden.com](torihedden.com)
+View at [torihedden.com](http://torihedden.com/)
