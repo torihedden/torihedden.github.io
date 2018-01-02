@@ -1,5 +1,7 @@
 
 $(document).ready(function(){
+  
+$("#copyright").html("&copy; " + (new Date()).getFullYear() + " Tori Hedden");
 
 //initialize visibility of the X to close the mobile view contact menu as hidden
   $(".fa-times").hide();
