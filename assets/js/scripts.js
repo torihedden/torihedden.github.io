@@ -41,4 +41,4 @@ $("#copyright").html("&copy; " + (new Date()).getFullYear() + " Tori Hedden");
   });
 
 });
-//investigate media-query specific js files... instead of checking whether or not the desktop footer is shown, really the behavior we care about is tied to the media query. better befinition of when this should happen.
+//investigate media-query specific js files... instead of checking whether or not the desktop footer is shown, really the behavior we care about is tied to the media query. better definition of when this should happen.
