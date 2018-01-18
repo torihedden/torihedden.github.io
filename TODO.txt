@@ -1,0 +1,12 @@
+- convert divs masquerading as buttons into true buttons
+
+- cull unused markup
+
+- consolidate scss files
+
+- run accessibility test
+
+DONE
+
+- all external links open in new tab
+- link underlines removed from characters with descenders for legibility

@@ -844,7 +844,9 @@
           text-decoration: none;
           color: white; }
         #contact #contact-wrap div a:hover {
-          text-decoration: underline; }
+          text-decoration: underline;
+          text-decoration-skip: ink;
+          text-decoration-skip-ink: auto; }
       #contact #contact-wrap span {
         color: gray; }
       #contact #contact-wrap #copyright {
@@ -1084,7 +1086,9 @@
           text-decoration: none;
           color: white; }
         #contact #contact-wrap div a:hover {
-          text-decoration: underline; }
+          text-decoration: underline;
+          text-decoration-skip: ink;
+          text-decoration-skip-ink: auto; }
       #contact #contact-wrap span {
         color: gray; }
       #contact #contact-wrap #copyright {
