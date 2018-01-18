@@ -14,3 +14,9 @@ $header-font: "Montserrat", sans-serif;
 @import "tabletView";
 @import "desktopView";
 @import "desktopHDView";
+
+a {
+  text-decoration: underline;
+  text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
