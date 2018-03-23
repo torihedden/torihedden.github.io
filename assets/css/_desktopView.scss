@@ -162,8 +162,7 @@
     }
     .project-card {
       .img-wrap {
-        // border: solid 1px red;
-        height: 52%;
+        min-height: 300px;
       }
       width: 90%;
       margin: 5%;

@@ -458,7 +458,7 @@
       border-radius: 2%;
       font-family: "Open Sans", "Arial", sans-serif; }
       #projects .project-card .img-wrap {
-        height: 45%; }
+        min-height: 275px; }
       #projects .project-card .title-desc {
         display: inline-block;
         width: 80%;
@@ -775,7 +775,7 @@
       border-radius: 2%;
       font-family: "Open Sans", "Arial", sans-serif; }
       #projects .project-card .img-wrap {
-        height: 52%; }
+        min-height: 300px; }
       #projects .project-card .title-desc {
         display: inline-block;
         width: 90%;
@@ -1017,7 +1017,7 @@
       border-radius: 2%;
       font-family: "Open Sans", "Arial", sans-serif; }
       #projects .project-card .img-wrap {
-        height: 52%; }
+        min-height: 300px; }
       #projects .project-card .title-desc {
         display: inline-block;
         width: 90%;
