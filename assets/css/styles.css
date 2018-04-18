@@ -1151,4 +1151,13 @@ a, a:visited {
 #projects .project-card .button-wrap a.featured-button {
   padding: 15px; }
 
+#recommendations {
+  font-family: "Open Sans", "Arial", sans-serif;
+  padding: 150px;
+  font-size: 20px;
+  background: #063141;
+  color: white; }
+  #recommendations .rec-intro {
+    font-weight: bold; }
+
 /*# sourceMappingURL=styles.css.map */
