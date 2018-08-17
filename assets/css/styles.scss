@@ -15,3 +15,16 @@ $header-font: "Montserrat", sans-serif;
 @import "desktopView";
 @import "desktopHDView";
 @import "projectPage";
+
+#recommendations {
+  font-family: $font;
+  padding: 150px;
+  font-size: 20px;
+  background: $navy2;
+  color: white;
+  
+
+  .rec-intro {
+    font-weight: bold;
+  }
+}
