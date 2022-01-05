@@ -18,69 +18,134 @@
   <div id="content">
     <div id="header">
 
-      <div id="theme-toggle">
-        <label class="switch">
-          <input type="checkbox" checked>
-          <span class="slider"></span>
-        </label>
-        <div>dark mode</div>
+      <div id="toggle-wrap">
+        <div id="theme-toggle">
+          <label class="switch">
+            <input type="checkbox" id="toggle-switch" checked>
+            <span class="slider"></span>
+          </label>
+          <div id="site-theme-name">dark mode</div>
+        </div>
       </div>
 
-      <img class="profile" src="assets\images\profile pic.jpg">
+      <div class="profile-wrap">
 
-      <p>tori hedden</p>
-      <p>developer</p>
-      <p>designer</p>
+        <!-- <div class="picture-highlight">
+          <div class="image-crop">
+            <img class="profile" src="assets\images\ui series.png" />
+          </div>
+        </div> -->
 
-      <div>
-        <a class="link">github</a>
-        <a class="link">linkedin</a>
+        <div class="picture-highlight">
+        </div>
+
+          <div class="image-crop">
+            <img class="profile" src="assets\images\profile-pic.jpg">
+          </div>
+        
+        <div class="profile-details">
+          <p>tori hedden</p>
+  
+          <div class="profile-subdetails">
+            <p class="role">developer</p>
+            <img src="assets/icons/slash.svg"/>
+            <p class="role">designer</p>
+          </div>
+          <div class="link-wrap">
+            <a class="link" href="https://github.com/torihedden">github</a>
+            <a class="link" href="https://www.linkedin.com/in/victoriahedden/">linkedin</a>
+          </div>
+        </div>
       </div>
-
-      <div class="section-header">my work</div>
-      <img src="assets\icons\arrow down.svg" />
-
     </div>
 
+    <div class="section-header">
+      <div>
+        my work
+      </div>
+      <img class="arrow-animate" src="assets\icons\arrow down.svg" />
+    </div>
+      
     <!-- <img src="assets/images/low_poly.png" width="300px" alt="Low-poly illustration of Tori Hedden" /> -->
 
-    <div class="work">
+    <div class="work-wrap">
+
+    <a class="work-card" href="https://torihedden.medium.com/list/ui-accessibility-renovations-e7737a58d986" target="_blank">
       <div class="title">ui renovations series</div>
-      <div class="description">case studies of <span class="highlight">ui/ux </span>redesigns with an emphasis on <span class="highlight">accessibility</span></div>
-  </div>
+      <div class="description">case studies of <span class="highlight">ui/ux </span>redesigns with an emphasis on <span class="highlight">accessibility</span>
+      </div>
+      <div class="card-background">
+        <img src="assets\images\ui series.png" />
+      </div>
+    </a>
 
-  <div class="work">
+    <div class="work-card">
     <div class="title">blue cross blue shield nc dashboard</div>
-    <div class="description">implemented business owner and graphic designer asks with <span class="highlight">html</span>, <span class="highlight">css</span>, and <span class="highlight">angular</span></div>
-</div>
-
-  <div class="section-header">favorite tools & technologies</div>
-
-  <div class="tags-wrapper">
-    <div class="tag">javascript</div>
-    <div class="tag">react</div>
-    <div class="tag">git</div>
-    <div class="tag">node</div>
-    <div class="tag">jest</div>
-    <div class="tag">figma</div>
+    <div class="description">implemented business owner and graphic designer asks with <span class="highlight">html</span>, <span class="highlight">css</span>, and <span class="highlight">angular</span>
+    </div>
+    <div class="card-background">
+      <img src="assets\images\ui series.png" />
+    </div>
   </div>
- 
-    <img src="assets\icons\arrow down.svg" />
+
+  <div class="work-card">
+    <div class="title">low-poly self-portrait</div>
+    <div class="description">manually crafted vector image via color interpolation and polygon creation with <span class="highlight">adobe illustrator</span>
+    </div>
+    <div class="card-background">
+      <img src="assets\images\ui series.png" />
+    </div>
+  </div>
+
+  <div class="work-card">
+    <div class="title">icon sets</div>
+    <div class="description"><span class="highlight">svg</span> icons for common web interface needs
+    </div>
+    <div class="card-background">
+      <img src="assets\images\ui series.png" />
+    </div>
+  </div>
+  
+  </div>
+  
 
   <div id="testimonials">
-    <div class="section-header">testimonials</div>
-    <img src="assets\icons\arrow down.svg" />
-    <img class="quote" src="assets\icons\quote-left.svg"/>
-    <p>There are always different approaches to every problem, and Tori consistently charges forward with an open, curious mind. She takes on every challenge with enthusiasm to not just succeed, but also to learn along the way for her own personal growth as a developer. If I had to make a choice of who to have on my team, I would happily pick Tori every time: she is skilled and competent, but not blind to opportunities to experiment and try new things. Above all else, she has a bright and eager personality that just makes her a delight to work with!</p>
-    <img class="quote" src="assets\icons\quote-right.svg"/>
+    <div class="section-header">
+      <div>testimonials</div>
+      <img src="assets\icons\arrow down.svg" />
+    </div>
+
+    <div class="testimonials-content">
+      <img class="quote" src="assets\icons\quote-left.svg"/>
+      <p>There are always different approaches to every problem, and Tori consistently charges forward with an open, curious mind. She takes on every challenge with enthusiasm to not just succeed, but also to learn along the way for her own personal growth as a developer.</p>
+      <p>If I had to make a choice of who to have on my team, I would happily pick Tori every time: she is skilled and competent, but not blind to opportunities to experiment and try new things. Above all else, she has a bright and eager personality that just makes her a delight to work with!</p>
+      <img class="quote" src="assets\icons\quote-right.svg"/>
+    </div>
+  </div>
+
+  <div class="favorites">
+    <div class="section-header">
+      <div>
+        my favorite tools
+      </div>
+      <img src="assets\icons\arrow down.svg" />
+    </div>
+    <div class="tags-wrapper">
+      <div class="tag">javascript</div>
+      <div class="tag">react</div>
+      <div class="tag">git</div>
+      <div class="tag">node</div>
+      <div class="tag">jest</div>
+      <div class="tag">figma</div>
+    </div>
   </div>
 
   <div id="footer">
-    <p>©2022</p>
+    <p id="year">©2022</p>
     <p>tori hedden</p>
   </div>
 
-  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/index.js"></script>
 
 </body>
 </html>
