@@ -1,6 +1,5 @@
 const content = document.getElementById("content");
 const work = document.getElementsByClassName("section-header")[0];
-const arrow = document.getElementsByClassName("arrow-animate")[0];
 const themeToggle = document.getElementById("toggle-switch");
 const siteThemeName = document.getElementById("site-theme-name");
 const favorites = document.getElementsByClassName("section-header")[2];
@@ -10,11 +9,13 @@ const topScrollButton = document.getElementById("top-scroll");
 const year = document.getElementById("year");
 year.innerHTML = `© ${new Date().getFullYear()}`;
 
-const toggleTheme = (toggle) => {
-  if (toggle.checked) {
+const setTheme = (val) => {
+  if (val) {
     siteThemeName.innerHTML = "dark mode";
+    content.classList.remove("light");
   } else {
     siteThemeName.innerHTML = "light mode";
+    content.classList.add("light");
   }
 };
 
@@ -35,12 +36,11 @@ const animateToolTags = () => {
 };
 
 themeToggle.addEventListener("change", () => {
-  toggleTheme(themeToggle);
+  setTheme(themeToggle.checked);
 });
 
 work.addEventListener("click", () => {
-  work.scrollIntoView({ behavior: "smooth" }); // scroll to work section
-  arrow.classList.remove("arrow-animate"); // halt animation of section header arrow
+  work.scrollIntoView({ behavior: "smooth" });
 });
 
 topScrollButton.addEventListener("click", () => {
@@ -58,3 +58,5 @@ window.onscroll = () => {
     topScrollButton.classList.add("hide");
   }
 };
+
+console.log(topScrollButton);
