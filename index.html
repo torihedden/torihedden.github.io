@@ -2,211 +2,176 @@
 <html lang="en">
 
 <head>
-  <title>Tori Hedden - Developer</title>
+  <title>tori hedden - developer/designer</title>
 
-  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
-  <meta name="Tori Hedden developer portfolio" content="Personal portfolio for Tori Hedden's developer work. Frontend developer, JavaScript, Angular, and React.">
+  <meta name="Tori Hedden developer portfolio"
+    content="Personal portfolio for Tori Hedden's developer work. Frontend developer, UI designer, JavaScript, Angular, and React.">
 </head>
 
 <body>
-
-  <div id="content-wrapper">
-
+  <div id="content">
     <div id="header">
-
-      <div id="name-wrap">
-        <div id="my-name">Tori Hedden</div>
-
-        <div id="name-subtitle">developer</div>
+      <div id="toggle-wrap">
+        <div id="theme-toggle">
+          <label class="switch">
+            <input type="checkbox" id="toggle-switch" checked>
+            <span class="slider"></span>
+          </label>
+          <div id="site-theme-name">dark mode</div>
+        </div>
       </div>
 
-      <div id="contact-section">
-        <a href="https://github.com/torihedden" target="_blank" rel="noreferrer"><i class="fa fa-github fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/victoriahedden" target="_blank" rel="noreferrer"><i class="fa fa-linkedin fa-2x"></i></a>
-        <a href="https://twitter.com/OneTrueTori" target="_blank" rel="noreferrer"><i class="fa fa-twitter fa-2x"></i></a>
-        <a href="mailto:tori.hedden@gmail.com" target="_blank" rel="noreferrer"><i class="fa fa-envelope fa-2x"></i></a>
-      </div>
+      <div class="profile-wrap">
+        <div class="picture-highlight">
+        </div>
 
-    </div>
+        <div class="image-crop">
+          <img class="profile" src="assets\images\profile-pic-small.jpg">
+        </div>
 
-    <div id="about">
-      <div id="large-portrait">
-        <img src="assets/images/low_poly.png" width="300px" alt="Low-poly illustration of Tori Hedden></img>
-      </div>
+        <div class="profile-details">
+          <p>tori hedden</p>
 
-      <div id="bio">
-        <p>Developer thoughtfully writing clean code and creating beautiful, useful UI</p>
-        <div class="about-button-wrap">
-          <div class="about-button">View my work</div>
-          <div class="about-button2">Contact me</div>
-          <div class="about-button3"><a href="/assets/Hedden_Resume.pdf" target="_blank" rel="noreferrer">Résumé</a></div>
+          <div class="profile-subdetails">
+            <p class="role">developer <span>&</span> designer</p>
+          </div>
+          <div class="link-wrap">
+            <a class="link" href="https://github.com/torihedden">github</a>
+            <a class="link" href="https://www.linkedin.com/in/victoriahedden/">linkedin</a>
+          </div>
         </div>
       </div>
     </div>
 
-    <div id="recommendations">
-        <div class="quotation-mark">&ldquo;</div>
-        <p>There are always different approaches to every problem, and Tori consistently charges forward with an open, curious mind. She takes on every challenge with enthusiasm to not just succeed, but also to learn along the way for her own personal growth as a developer. If I had to make a choice of who to have on my team, I would happily pick Tori every time: she is skilled and competent, but not blind to opportunities to experiment and try new things. Above all else, she has a bright and eager personality that just makes her a delight to work with!</p>
-        <div class="quotation-mark">&rdquo;</div>
-        <p>~ Kristen T.</p>
+    <div class="section-header">
+      <div class="my-work">
+        my work
+      </div>
+      <div class="down-arrow-icon"></div>
+      <!-- <img class="arrow-animate" src="assets\icons\arrow down.svg" /> -->
     </div>
 
-    <div id="projects">
-      <div class="card-wrap featured-card">
-        <div class="project-card">
-          <div class="img-wrap">
-            <a href="http://www.livefearlessnc.com" target="_blank" rel="noreferrer">
-              <img src="assets/images/livefearless.png" alt="Screenshot of homepage of livefearlessnc.com, including several portrait photographs">
-            </a>
+    <div class="work-wrap">
+      <div class="work-card">
+        <a class="title" href="https://torihedden.medium.com/list/ui-accessibility-renovations-e7737a58d986"
+          target="_blank">
+          <div>ui renovations series</div>
+          <div class="share-icon">
           </div>
-          <div class="title-desc">
-            <div class="project-title">LiveFearless NC</div>
-            <div class="project-desc">campaign for Blue Cross Blue Shield of North Carolina</div>
-            <div class="tech-desc">built with Angular, Gulp, and Bootstrap</div>
-            <div class="button-wrap">
-              <a href="http://www.bcbsnc.com/livefearless" class="site-button" target="_blank" rel="noreferrer">View Project</a>
-            </div>
-          </div>
+        </a>
+        <div class="description">case studies of <span class="highlight">ui/ux </span>redesigns with an emphasis on
+          <span class="highlight">accessibility</span>
+          <br />
+          <br />
+          featured by the UX Collective, the largest design publication on Medium
+        </div>
+        <div class="card-background">
+          <img src="assets\images\foodstream-renovation.png" />
         </div>
       </div>
 
-      <div class="card-wrap featured-card">
-        <div class="project-card">
-          <div class="img-wrap">
-            <img src="assets/images/blueCrossNCdashboard.png" alt="screenshot of Blue Cross NC member portal dashboard">
-          </div>
-          <div class="title-desc">
-            <div class="project-title">Blue Connect</div>
-            <div class="project-desc">member portal for Blue Cross and Blue Shield of North Carolina</div>
-            <div class="tech-desc">built with Angular, BootStrap, and Apache Velocity</div>
-          </div>
+      <div class="work-card">
+        <div class="title">member resources</div>
+        <div class="subtitle">[ blue cross blue shield nc ]</div>
+        <div class="description">collaborated on informative & functional tools with <span
+            class="highlight">html</span>, <span class="highlight">css</span>, & <span class="highlight">angular</span>
+        </div>
+        <div class="card-background">
+          <img src="assets\images\blueCrossNCdashboard.png" />
         </div>
       </div>
 
-      <div class="card-wrap">
-        <div class="project-card">
-          <div class="img-wrap">
-            <img src="assets/images/D3_preview.png" alt="screenshot of a chart made with D3"/>
-          </div>
-          <div class="title-desc">
-            <div class="project-title">D3.js Demo</div>
-            <div class="project-desc">showcases widgets</div>
-            <div class="tech-desc">made with D3.js</div>
-            <div class="button-wrap">
-              <a href="http://torihedden.com/D3mo" class="site-button" target="_blank" rel="noreferrer">View Project</a>
-              <a href="https://github.com/torihedden/D3mo" class="GH-button" target="_blank" rel="noreferrer">View Code</a>
-            </div>
-          </div>
+      <div class="work-card">
+        <div class="title">low-poly self-portrait</div>
+        <div class="description">manually crafted vector image via color interpolation & polygon creation with <span
+            class="highlight">adobe illustrator</span>
         </div>
-      </div><!--
-
-      --><div class="card-wrap">
-        <div class="project-card">
-          <div class="img-wrap">
-            <img src="assets/images/foodstream-landing.png" alt="screenshot of the login page of the app foodstream" />
-          </div>
-          <div class="title-desc">
-            <div class="project-title">Foodstream</div>
-            <div class="project-desc">The Iron Yard final project</div>
-            <div class="tech-desc">Angular, Ruby on Rails, Sass, AWS, Firebase</div>
-            <div class="button-wrap">
-              <a href="/foodstream/" class="site-button" target="_blank" rel="noreferrer">View Project</a>
-              <a href="https://github.com/foodstream" class="GH-button" target="_blank" rel="noreferrer">View Code</a>
-            </div>
-          </div>
+        <div class="card-background">
+          <img src="assets\images\low-poly.png" />
         </div>
-      </div><!--
+      </div>
 
-      --><div class="card-wrap">
-        <div class="project-card">
-          <div class="img-wrap">
-            <img src="assets/images/MEAN-app-preview.jpg" alt="screenshot of a web app" />
-          </div>
-          <div class="title-desc">
-            <div class="project-title">You Are Very Smart</div>
-            <div class="project-desc">generate pseudo-intellectualisms</div>
-            <div class="tech-desc">MEAN stack, Bootstrap, Heroku</div>
-            <div class="button-wrap">
-              <a href="http://www.youareverysmart.us/" target="_blank" rel="noreferrer">View Project</a>
-              <a href="https://bitbucket.org/torihedden/" class="GH-button" target="_blank" rel="noreferrer">View Code</a>
-            </div>
-          </div>
+      <div class="work-card">
+        <div class="title">
+          <div>icon sets</div>
         </div>
-      </div><!--
-
-      --><div class="card-wrap">
-        <div class="project-card">
-          <div class="img-wrap">
-            <img src="assets/images/Appt-app-preview2.png" alt="screenshot of an appointment app" />
-          </div>
-          <div class="title-desc">
-            <div class="project-title">Appointment App</div>
-            <div class="project-desc">Week 4 project at The Iron Yard</div>
-            <div class="tech-desc">APIs, local storage, jQuery</div>
-            <div class="button-wrap">
-              <a href="http://torihedden.com/AppointmentApp/" target="_blank" rel="noreferrer">View Project</a>
-              <a href="https://github.com/torihedden/AppointmentApp" class="GH-button" target="_blank" rel="noreferrer">View Code</a>
-            </div>
-          </div>
+        <div class="description"><span class="highlight">svg</span> icons for common web interface needs
+        </div>
+        <div class="bonus-details">hey there! I also made all the icons on this site!</div>
+        <div class="card-background">
+          <img src="assets\images\icon-set.png" />
         </div>
       </div>
     </div>
-  </div>
 
-  <div id="contact">
-    <div id="contact-wrap">
-      <div><a href="mailto:tori.hedden@gmail.com" target="_blank" rel="noreferrer">tori.hedden@gmail.com</a></div>
-      <span>|</span>
-      <div><a href="http://github.com/torihedden" target="_blank" rel="noreferrer">github.com/torihedden</a></div>
-      <span>|</span>
-      <div><a href="https://www.linkedin.com/in/victoriahedden" target="_blank" rel="noreferrer">linkedin.com/in/victoriahedden</a></div>
-      <span>|</span>
-      <div><a href="http://twitter.com/OneTrueTori" target="_blank" rel="noreferrer">@OneTrueTori</a></div>
-      <div id="copyright"></div>
+    <div class="work-wrap">
+      <div class="work-card extended">
+        <div class="title">merchandiser platform</div>
+        <div class="subtitle">[ commercetools ]</div>
+        <div class="description">created custom extensions & new functionality with <span
+            class="highlight">react</span>, <span class="highlight">graphql</span>, & charting libraries
+        </div>
+        <div class="card-background">
+          <img src="assets\images\configuration-panel.png" />
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="float-icon">
-    <div class="icon-wrap">
-      <i class="fa fa-comment-o fa-3x" aria-hidden="true"></i>
-      <i class="fa fa-times fa-3x" aria-hidden="true"></i>
+    <div id="testimonials">
+      <div class="section-header">
+        <div>testimonials</div>
+      </div>
+
+      <div class="testimonials-content">
+        <div class="quote-wrap">
+          <div class="quote-left-icon"></div>
+        </div>
+        <p>There are always different approaches to every problem, and Tori consistently charges forward with an open,
+          curious mind. She takes on every challenge with enthusiasm to not just succeed, but also to learn along the
+          way for her own personal growth as a developer.</p>
+        <p>If I had to make a choice of who to have on my team, I would happily pick Tori every time: she is skilled and
+          competent, but not blind to opportunities to experiment and try new things. Above all else, she has a bright
+          and eager personality that just makes her a delight to work with!</p>
+        <div class="quote-wrap-right">
+          <div class="quote-right-icon"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="favorites">
+      <div class="section-header">
+        <div>
+          my favorite tools
+        </div>
+      </div>
+      <div class="tags-wrapper">
+        <div class="tag">javascript</div>
+        <div class="tag">react</div>
+        <div class="tag">git</div>
+        <div class="tag">graphql</div>
+        <div class="tag">node</div>
+        <div class="tag">jest</div>
+        <div class="tag">figma</div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p id="year">©2022</p>
+      <p>tori hedden</p>
+      <div id="top-scroll" class="hide">
+        <div class="top-scroll-icon"></div>
+      </div>
     </div>
   </div>
-
-  <div class="menu-wrap">
-    <div class="menu">
-      <div>
-        <a href="mailto:tori.hedden@gmail.com" target="_blank" rel="noreferrer">
-                    <i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
-                </a>
-      </div>
-      <div>
-        <a href="https://github.com/torihedden" target="_blank" rel="noreferrer">
-                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                </a>
-      </div>
-      <div>
-        <a href="http://www.linkedin.com/in/victoriahedden" target="_blank" rel="noreferrer">
-                    <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-                </a>
-      </div>
-      <div>
-        <a href="http://www.twitter.com/OneTrueTori" target="_blank" rel="noreferrer">
-                    <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-                </a>
-      </div>
-    </div>
-    <div class="caret"></div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/index.js"></script>
 
 </body>
 

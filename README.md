@@ -1,16 +1,13 @@
-# My Portfolio Site
+# Portfolio Site
 
-View at [torihedden.com](http://torihedden.com/)
+View deployed at [torihedden.com](http://torihedden.com/).
 
-## Development Notes
+## About
 
-To run locally for development, run:
+Made simply with just HTML, CSS, and vanilla JS! I stripped down this site to its essential components as a challenge and as a palate cleanser from the heavier work I need to use frameworks for.
 
-`browser-sync start --server`
+## Dev Notes
 
-To build CSS while writing Sass, run:
+Launch and reload on change(s) with:
 
-`sass --watch assets/css/styles.scss:assets/css/styles.css`
-
-
-TODO: combine tasks into a dev tool runner
+`browser-sync start --server --files "assets" "index.html"`
