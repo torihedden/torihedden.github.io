@@ -58,5 +58,3 @@ window.onscroll = () => {
     topScrollButton.classList.add("hide");
   }
 };
-
-console.log(topScrollButton);
