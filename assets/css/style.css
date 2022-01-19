@@ -135,6 +135,12 @@ table {
   --large: 40px;
   --x-large: 64px;
 
+  /* for reference only */
+  /* you can't use CSS vars in @media declarations */
+  --screen-small: 480px;
+  --screen-medium: 770px;
+  --screen-large: 1024px;
+
   --header-font: "Archivo Black", sans-serif;
   --main-font: "Roboto", sans-serif;
 
@@ -149,7 +155,7 @@ table {
   --accent-light: #03566d;
 
   /* for changing SVG fill color */
-  /* all credit to Barrett Sonntag's tool: https://codepen.io/sosuke/pen/Pjoqqp */
+  /* all credit to Barrett Sonntag's tool: https://codepen.io/sosuke/pen/Pjoqqp for calculating color-matching filters*/
   --accent-dark-filter: invert(49%) sepia(93%) saturate(940%) hue-rotate(14deg)
     brightness(100%) contrast(99%);
   --accent-light-filter: invert(24%) sepia(27%) saturate(3400%)
@@ -182,16 +188,17 @@ table {
   background: var(--light);
 }
 
-/* #header > p:nth-of-type(1) {
-  color: var(--light);
-  border: solid 5px red;
-} */
-
 #toggle-wrap {
   display: flex;
   justify-content: flex-end;
   padding-top: var(--x-small);
   padding-right: var(--x-small);
+}
+
+@media screen and (max-width: 1024px) {
+  #toggle-wrap {
+    margin-bottom: var(--large);
+  }
 }
 
 #theme-toggle {
@@ -307,6 +314,14 @@ input:checked + .slider:before {
   -webkit-animation-name: fade;
 }
 
+@media screen and (max-width: 1024px) {
+  .profile-wrap {
+    padding-left: var(--x-large);
+    margin-bottom: var(--small);
+    display: block;
+  }
+}
+
 .picture-highlight {
   margin-top: var(--x-large);
   width: 300px;
@@ -320,6 +335,23 @@ input:checked + .slider:before {
 
 #content.light .picture-highlight {
   background-color: var(--dark);
+}
+
+@media screen and (max-width: 1024px) {
+  .picture-highlight {
+    transform: translateX(calc(-1 * var(--medium)))
+      translateY(calc(-1 * var(--small)));
+  }
+
+  .image-crop {
+    margin-top: var(--small);
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .picture-highlight {
+    display: none;
+  }
 }
 
 .image-crop {
@@ -347,6 +379,11 @@ input:checked + .slider:before {
 #content.light .profile-details > p:nth-of-type(1) {
   text-shadow: none;
 }
+@media screen and (max-width: 770px) {
+  .profile-details {
+    padding: var(--x-large) var(--large);
+  }
+}
 
 .profile-details img {
   padding: 0 calc(var(--x-small) / 4);
@@ -359,21 +396,6 @@ input:checked + .slider:before {
 
 .profile-subdetails img {
   margin-bottom: -5px;
-}
-
-.slash-icon {
-  display: inline-block;
-  height: 90px;
-  width: 30px;
-  background-image: url("/assets/icons/slash.svg");
-  filter: var(--accent-dark-filter);
-  background-position: left;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#content.light .slash-icon {
-  filter: var(--accent-light-filter);
 }
 
 .profile {
@@ -408,12 +430,20 @@ input:checked + .slider:before {
   align-items: center;
   letter-spacing: 0.25em;
   margin-bottom: var(--x-large);
-  padding-left: calc(var(--x-large) * 0.85);
+  padding-left: var(--medium);
   cursor: pointer;
 }
 
 #content.light .section-header {
   color: var(--dark);
+}
+
+@media screen and (max-width: 770px) {
+  .section-header {
+    padding-left: 0;
+    margin-bottom: var(--large);
+    font-size: var(--medium);
+  }
 }
 
 .my-work {
@@ -460,12 +490,24 @@ input:checked + .slider:before {
 }
 
 .work-card {
+  border: solid 3px var(--dark);
   font-size: var(--small);
   text-decoration: none;
   line-height: var(--medium);
   margin-bottom: calc(2 * var(--x-large));
   width: 36%;
   padding: var(--medium);
+}
+
+@media screen and (max-width: 1024px) {
+  .work-wrap {
+    padding-left: calc(var(--x-large));
+    padding-right: calc(var(--x-large));
+  }
+
+  .work-card {
+    width: 100%;
+  }
 }
 
 #content.light .work-card {
@@ -502,7 +544,7 @@ input:checked + .slider:before {
 .share-icon {
   display: inline-block;
   height: 32px;
-  width: 33px;
+  width: 35px;
   background-image: url("/assets/icons/share.svg");
   filter: var(--light-filter);
   background-position: left;
@@ -532,6 +574,10 @@ input:checked + .slider:before {
   color: var(--light);
   font-size: var(--x-small);
   text-align: right;
+}
+
+#content.light .bonus-details {
+  color: var(--black);
 }
 
 .highlight {
@@ -578,13 +624,6 @@ input:checked + .slider:before {
   padding-left: var(--x-large);
 }
 
-@media screen and (max-width: 770px) {
-  .tags-wrapper {
-    flex-wrap: wrap;
-    padding-left: 110px;
-  }
-}
-
 .animate-tags {
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -599,6 +638,19 @@ input:checked + .slider:before {
   font-size: var(--small);
   position: relative;
   overflow: hidden;
+}
+
+@media screen and (max-width: 770px) {
+  .tags-wrapper {
+    flex-wrap: wrap;
+    padding-left: var(--x-large);
+  }
+
+  .tag {
+    padding: 10px 20px;
+    font-size: calc(var(--x-small) * 1.25);
+    margin: 0 var(--x-small) var(--x-small) 0;
+  }
 }
 
 #content.light .tag {
@@ -680,6 +732,17 @@ input:checked + .slider:before {
   display: flex;
 }
 
+@media screen and (max-width: 1024px) {
+  .testimonials-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #testimonials p {
+    padding: var(--x-small) var(--small);
+  }
+}
+
 .quote-left-icon {
   display: inline-block;
   width: 102px;
@@ -700,6 +763,14 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+@media screen and (max-width: 1024px) {
+  .quote-wrap-right {
+    display: flex;
+    align-items: flex-end;
+    height: 70px;
+  }
 }
 
 .quote-right-icon {
@@ -752,6 +823,15 @@ input:checked + .slider:before {
 #content.light .link:hover {
   background: var(--accent-light);
   color: var(--light);
+}
+
+@media screen and (max-width: 1060px) {
+  .link {
+    display: block;
+    margin-bottom: var(--small);
+    width: 180px;
+    text-align: center;
+  }
 }
 
 #footer {
