@@ -589,29 +589,14 @@ input:checked + .slider:before {
   color: var(--accent-light);
 }
 
-.card-background {
-  margin-top: var(--x-large);
-  background-color: var(--black);
-  width: 80%;
-  margin-left: 5%;
-  margin-right: 15%;
-}
-
 .card-background img {
+  margin-top: var(--large);
   width: 100%;
-  transform: translateX(var(--medium)) translateY(calc(-1 * var(--medium)));
   box-sizing: border-box;
 }
 
 #content.light .card-background img {
   border: solid 2px var(--black);
-}
-
-.card-background img:hover {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  transform: translateX(calc(10px + var(--medium)))
-    translateY(calc(-1 * calc(10px + var(--medium))));
 }
 
 .favorites {
