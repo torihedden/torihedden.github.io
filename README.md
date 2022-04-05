@@ -1,6 +1,6 @@
 # Portfolio Site
 
-View deployed at [torihedden.com](http://torihedden.com/).
+View deployed at [torihedden.com](https://torihedden.com/).
 
 ## About
 

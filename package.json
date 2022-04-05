@@ -1,7 +1,7 @@
 {
   "name": "torihedden.github.io",
   "version": "1.0.0",
-  "description": "View at [torihedden.com](http://torihedden.com/)",
+  "description": "View at [torihedden.com](https://torihedden.com/)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
