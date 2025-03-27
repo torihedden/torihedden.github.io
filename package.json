@@ -4,6 +4,7 @@
   "description": "View at [torihedden.com](https://torihedden.com/)",
   "main": "index.js",
   "scripts": {
+    "dev": "browser-sync start --server --files 'assets' 'index.html'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/torihedden/torihedden.github.io/issues"
   },
-  "homepage": "https://github.com/torihedden/torihedden.github.io#readme"
+  "homepage": "https://github.com/torihedden/torihedden.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.3"
+  }
 }
