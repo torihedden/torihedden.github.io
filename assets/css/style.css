@@ -123,9 +123,10 @@ q:after {
   content: "";
   content: none;
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+
+/* this will be re-styled further down */
+*:focus {
+  outline: none;
 }
 
 :root {
@@ -135,8 +136,7 @@ table {
   --large: 40px;
   --x-large: 64px;
 
-  /* for reference only */
-  /* you can't use CSS vars in @media declarations */
+  /* for reference only - you can't use CSS vars in @media declarations */
   --screen-small: 480px;
   --screen-medium: 770px;
   --screen-large: 1024px;
@@ -154,8 +154,7 @@ table {
   --accent-dark: #d89801;
   --accent-light: #03566d;
 
-  /* for changing SVG fill color */
-  /* all credit to Barrett Sonntag's tool: https://codepen.io/sosuke/pen/Pjoqqp for calculating color-matching filters*/
+  /* for changing SVG fill color - see https://codepen.io/sosuke/pen/Pjoqqp */
   --accent-dark-filter: invert(49%) sepia(93%) saturate(940%) hue-rotate(14deg)
     brightness(100%) contrast(99%);
   --accent-light-filter: invert(24%) sepia(27%) saturate(3400%)
@@ -170,7 +169,6 @@ table {
   background-color: var(--dark);
   color: var(--light);
   font-family: var(--main-font);
-  width: 100%;
 }
 
 #content.light {
@@ -178,11 +176,21 @@ table {
   color: var(--dark);
 }
 
+/* TODO: fix/add focus styles for all other focusable elements */
+
+#content a:focus {
+  outline: solid 3px var(--accent-dark);
+}
+
+#content.light a:focus {
+  outline: solid 3px var(--accent-light);
+}
+
 #header {
-  background: var(--dark);
   color: var(--accent-dark);
   font-family: var(--header-font);
   font-size: 48px;
+  padding-left: var(--x-large);
   padding-bottom: var(--small);
 }
 
@@ -240,14 +248,11 @@ table {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border: solid 3px var(--accent-light);
-  /* margin: 0 var(--small); */
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  /* height: 26px;
-  width: 26px; */
   height: 20px;
   width: 20px;
   left: 4px;
@@ -297,7 +302,7 @@ input:checked + .slider:before {
 }
 
 #site-theme-name {
-  margin-top: var(--medium);
+  margin-top: var(--small);
   text-align: center;
 }
 
@@ -327,8 +332,6 @@ input:checked + .slider:before {
 
 .picture-highlight {
   margin-top: var(--x-large);
-  /* width: 300px;
-  height: 300px; */
   width: var(--profile-image-size);
   height: var(--profile-image-size);
   border-radius: 100%;
@@ -369,7 +372,6 @@ input:checked + .slider:before {
 .profile-details {
   color: var(--light);
   padding: var(--x-large);
-  /* padding-left: calc(var); */
 }
 
 #content.light .profile-details {
@@ -429,12 +431,10 @@ input:checked + .slider:before {
   color: var(--light);
   font-size: var(--large);
   font-family: var(--header-font);
-  /* text-transform: uppercase; */
   line-height: 47px;
   display: flex;
   align-items: center;
   margin-bottom: var(--large);
-  /* padding-left: var(--medium); */
   cursor: pointer;
 }
 
@@ -473,10 +473,6 @@ input:checked + .slider:before {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: solid 2px red;
-/* 
-  padding-left: calc(var(--x-large) * 1.5);
-  padding-right: calc(var(--x-large) * 1.5); */
 }
 
 .work-card {
@@ -521,7 +517,6 @@ input:checked + .slider:before {
   line-height: 1.4;
   margin-bottom: var(--x-small);
   text-decoration: none;
-  border: solid 1px magenta;
 }
 
 #content.light .title {
@@ -554,7 +549,6 @@ input:checked + .slider:before {
 
 .description {
   color: var(--light);
-  /* min-height: 100px; */
   font-size: 20px;
 }
 
@@ -587,12 +581,7 @@ input:checked + .slider:before {
   box-sizing: border-box;
 }
 
-.card-background.icons {
-  border: dashed 1px red;
-}
-
 .card-background.icons img {
-  border: solid 1px green;
   height: 40px;
 }
 
@@ -724,15 +713,10 @@ input:checked + .slider:before {
   filter: var(--accent-light-filter);
 }
 
-.quote-wrap {
-  border: solid 1px cyan;
-}
-
 .quote-wrap-right {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  border: solid 1px red;
 }
 
 @media screen and (max-width: 1024px) {

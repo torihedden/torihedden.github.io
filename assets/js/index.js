@@ -1,22 +1,9 @@
 const content = document.getElementById("content");
 const work = document.getElementsByClassName("section-header")[0];
 const themeToggle = document.getElementById("toggle-switch");
-const siteThemeName = document.getElementById("site-theme-name");
-const favorites = document.getElementsByClassName("section-header")[2];
 const topScrollButton = document.getElementById("top-scroll");
 
-const year = document.getElementById("year");
-year.innerHTML = `© ${new Date().getFullYear()}`;
-
-const setTheme = (val) => {
-  if (val) {
-    siteThemeName.innerHTML = "dark mode";
-    content.classList.remove("light");
-  } else {
-    siteThemeName.innerHTML = "light mode";
-    content.classList.add("light");
-  }
-};
+const setTheme = (val) => val ? content.classList.remove("light") : content.classList.add("light")
 
 const isInViewport = (el) => {
   const boundBox = el.getBoundingClientRect();
@@ -41,3 +28,5 @@ work.addEventListener("click", () => {
 topScrollButton.addEventListener("click", () => {
   content.scrollIntoView({ behavior: "smooth" });
 });
+
+document.getElementById("year").innerHTML = `© ${new Date().getFullYear()}`;
