@@ -571,6 +571,7 @@ a.title:hover {
   color: var(--light);
   font-size: var(--x-small);
   text-align: right;
+  padding-top: var(--small)
 }
 
 #content.light .bonus-details {
