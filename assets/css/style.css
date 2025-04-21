@@ -141,6 +141,8 @@ q:after {
   --screen-medium: 770px;
   --screen-large: 1024px;
 
+  --profile-image-size: 270px;
+
   --header-font: "Archivo Black", sans-serif;
   --main-font: "Roboto", sans-serif;
 
@@ -148,8 +150,6 @@ q:after {
   --dark: #171a1c;
   --gray: #e5e5e5;
   --light: #ffffff;
-
-  --dark-rgb: rgb(23, 26, 28);
 
   --accent-dark: #d89801;
   --accent-light: #03566d;
@@ -161,14 +161,13 @@ q:after {
     hue-rotate(163deg) brightness(90%) contrast(98%);
   --light-filter: invert(100%) sepia(3%) saturate(0%) hue-rotate(239deg)
     brightness(106%) contrast(104%);
-
-  --profile-image-size: 270px;
 }
 
 #content {
   background-color: var(--dark);
   color: var(--light);
   font-family: var(--main-font);
+  overflow: hidden;
 }
 
 #content.light {
