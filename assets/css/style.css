@@ -224,6 +224,14 @@ q:after {
   width: 72px;
 }
 
+#theme-toggle:focus-within {
+  outline: solid 3px var(--accent-light);
+}
+
+#content.light #theme-toggle:focus-within {
+  outline: solid 3px var(--accent-dark);
+}
+
 .switch {
   display: inline-block;
   position: relative;
@@ -244,7 +252,6 @@ q:after {
   right: 0;
   bottom: 0;
   border-radius: var(--medium);
-  background-color: var(--light);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border: solid 3px var(--accent-light);
@@ -264,12 +271,7 @@ q:after {
 }
 
 input:checked + .slider {
-  background-color: var(--dark);
   border: solid 3px var(--accent-dark);
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px var(--accent-dark);
 }
 
 input:checked + .slider:before {
